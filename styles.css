@@ -1,0 +1,158 @@
+body {
+    background-color: black;
+    color: white; /* Optional: to make text visible */
+}
+
+:root {
+    --main-border-color: #909090;
+    --body-border-color: #5cf100;
+    --footer-border-color: #fff;
+    --nav-border-color: #fff;
+    --small-text-border-color: #909090;
+
+
+}
+
+.image {
+    width: 95%;
+    height: auto;
+}
+
+.liste-a-puce {
+    list-style-type: disc;
+}
+
+.liste-a-puce ul {
+     list-style-type: circle;
+ }
+
+.lien-texte {
+    animation: small-text-animation 2s alternate infinite;
+}
+
+.body-content {
+    margin-left: 15%;
+    margin-right: 15%;
+
+    border-color: var(--body-border-color);
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+.tout {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.image-and-text {
+    max-width: 25%;
+    border: var(--main-border-color) 7px groove;
+    /*border-radius: 20px;*/
+}
+
+.picofme {
+    border: #424242 3px solid;
+
+    max-width: 80%;
+    height: auto;
+
+    margin: 5%;
+    margin-left: 9%;
+    /*border-radius: 20px;*/
+}
+
+footer {
+    border-top: var(--footer-border-color) groove 3px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logos {
+    border-left: var(--footer-border-color) groove 3px;
+    max-width: 25%;
+}
+
+nav {
+    border-bottom: var(--nav-border-color) groove 3px;
+
+}
+
+.small-text {
+    margin: 10px;
+    background-image: url("img/fallout-terminal.png");
+    border: var(--small-text-border-color) 7px groove;
+}
+
+.arrow {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.small-text > ul > li {
+    animation: small-text-animation 2s alternate infinite;
+    margin-left: -20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.small-text > ul > .dynamic {
+    margin-left: 0;
+}
+
+@keyframes small-text-animation {
+    from {
+        color: #56e000;
+    }
+    to {
+        color: #62ff00;
+    }
+}
+
+.small-text > ul > .dynamic:hover {
+    background-color: #3fa800;
+    animation: small-text-hover-animation 2s alternate infinite;
+}
+
+.small-text > ul > li:hover > a > .arrow {
+    display: revert;
+}
+
+@keyframes small-text-hover-animation {
+    from {
+        color: #1f5300;
+    }
+    to {
+        color: #266900;
+    }
+}
+
+li > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.invis {
+    color: rgba(0, 0, 0, 0);
+}
+
+.section-terminal {
+    animation: small-text-animation 2s alternate infinite;
+    background-image: url("img/fallout-terminal.png");
+    border: var(--small-text-border-color) 7px groove;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/*
+.section-terminal h3:hover {
+    animation: small-text-hover-animation 2s alternate infinite;
+    background-color: #3fa800;
+}*/
