@@ -1,7 +1,8 @@
 import { Routes } from '@angular/router';
-import { PortfolioMainComponent } from '../portfolio/main-template/main-template.component';
+import { PortfolioMainComponent } from '../portfolio/portfolio.component';
 import { AboutMeComponent } from '../portfolio/aboutme/aboutme.component';
 import { SkillJavaComponent } from '../portfolio/skills/java/java.component';
+import { SkillsComponent } from '../portfolio/skills/skills.component';
 
 export const routes: Routes = [
     { 
@@ -10,7 +11,10 @@ export const routes: Routes = [
         children: [
 
             { path: 'AboutMe', component: AboutMeComponent },
-            { path: 'Java', component: SkillJavaComponent },
+            { path: 'Skills', component: SkillsComponent, children: [
+
+                { path: 'Java', component: SkillJavaComponent }
+            ]},
         ] 
     },  
 ];

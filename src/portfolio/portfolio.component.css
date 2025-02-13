@@ -76,7 +76,7 @@ nav {
 
 .small-text {
     margin: 10px;
-    background-image: url("../../assets/images/fallout-terminal.png");
+    background-image: var(--fallout-terminal);
     border: var(--small-text-border-color) 7px groove;
 }
 

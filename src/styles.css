@@ -5,7 +5,7 @@
     --footer-border-color: #fff;
     --nav-border-color: #fff;
     --small-text-border-color: #909090;
-
+    --fallout-terminal: url("assets/images/fallout-terminal.png");
 
 }
 
@@ -31,7 +31,7 @@
 
 .section-terminal {
     animation: small-text-animation 2s alternate infinite;
-    background-image: url("assets/images/fallout-terminal.png");
+    background-image: var(--fallout-terminal);
     border: var(--small-text-border-color) 7px groove;
     margin-right: 10px;
     margin-left: 10px;
