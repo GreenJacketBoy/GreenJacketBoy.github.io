@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --main-border-color: #909090;
+    --body-border-color: #5cf100;
+    --footer-border-color: #fff;
+    --nav-border-color: #fff;
+    --small-text-border-color: #909090;
+
+
+}
+
+@keyframes small-text-hover-animation {
+    from {
+        color: #1f5300;
+    }
+    to {
+        color: #266900;
+    }
+}
+
+@keyframes small-text-animation {
+    from {
+        color: #56e000;
+    }
+    to {
+        color: #62ff00;
+    }
+}
+
+/* Le texte qui se trouve dans un terminal statique (exemple : "cat AboutMe.md" dans le portfolio) */
+
+.section-terminal {
+    animation: small-text-animation 2s alternate infinite;
+    background-image: url("assets/images/fallout-terminal.png");
+    border: var(--small-text-border-color) 7px groove;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
