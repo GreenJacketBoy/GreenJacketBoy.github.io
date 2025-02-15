@@ -5,11 +5,6 @@ body {
 
 /* les styles globaux sont dans src/styles.css */
 
-.image {
-    width: 95%;
-    height: auto;
-}
-
 .liste-a-puce {
     list-style-type: disc;
 }
@@ -17,10 +12,6 @@ body {
 .liste-a-puce ul {
      list-style-type: circle;
  }
-
-.lien-texte {
-    animation: small-text-animation 2s alternate infinite;
-}
 
 .body-content {
     margin-left: 15%;
