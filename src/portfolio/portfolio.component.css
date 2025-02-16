@@ -1,6 +1,21 @@
 body {
     background-color: black;
     color: white; /* Optional: to make text visible */
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    border-top: var(--footer-border-color) groove 3px;
+    background-color: inherit;
+
+    flex-shrink: 0;
 }
 
 /* les styles globaux sont dans src/styles.css */
@@ -44,10 +59,6 @@ body {
     margin: 5%;
     margin-left: 9%;
     /*border-radius: 20px;*/
-}
-
-footer {
-    border-top: var(--footer-border-color) groove 3px;
 }
 
 .footer {
