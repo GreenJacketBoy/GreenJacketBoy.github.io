@@ -3,7 +3,7 @@ import { RouterModule } from "@angular/router";
 
 
 @Component({
-    selector: 'ns-portfolio-main',
+    selector: 'pf-projects',
     imports: [RouterModule],
     templateUrl: './projects.component.html',
 })

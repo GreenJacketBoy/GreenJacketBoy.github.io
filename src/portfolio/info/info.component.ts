@@ -3,10 +3,10 @@ import { RouterModule } from "@angular/router";
 
 
 @Component({
-    selector: 'pf-skills',
+    selector: 'pf-info',
     imports: [RouterModule],
-    templateUrl: './skills.component.html',
+    templateUrl: './info.component.html',
 })
 
-export class SkillsComponent {
+export class InfoComponent {
 }

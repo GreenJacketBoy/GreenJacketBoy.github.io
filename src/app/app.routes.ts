@@ -9,6 +9,8 @@ import { ProjectsComponent } from '../portfolio/projects/projects.component';
 import { ProjectsSaeTrainsComponent } from '../portfolio/projects/sae-trains/sae-trains.component';
 import { ProjectsNdi2024Component } from '../portfolio/projects/ndi-2024/ndi-2024.component';
 import { ProjectsSaeS3Component } from '../portfolio/projects/sae-s3/sae-s3.component';
+import { InfoComponent } from '../portfolio/info/info.component';
+import { InfoSaeComponent } from '../portfolio/info/sae/sae.component';
 
 export const routes: Routes = [
 
@@ -37,6 +39,10 @@ export const routes: Routes = [
                 { path: 'SaeS3', component: ProjectsSaeS3Component },
                 { path: 'NDI2024', component: ProjectsNdi2024Component }
             ]},
+
+            { path: 'Info', component: InfoComponent, children: [
+                { path: 'SAE', component: InfoSaeComponent }
+            ]}
         ] 
     },  
 ];
