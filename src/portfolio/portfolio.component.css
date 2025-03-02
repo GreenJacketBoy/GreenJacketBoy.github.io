@@ -5,6 +5,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 main {
@@ -13,7 +14,6 @@ main {
 
 footer {
     border-top: var(--footer-border-color) groove 3px;
-    background-color: inherit;
 
     flex-shrink: 0;
 }
@@ -29,8 +29,9 @@ footer {
  }
 
 .body-content {
-    margin-left: 15%;
-    margin-right: 15%;
+    max-width: 1075px;
+    margin-left: auto;
+    margin-right: auto;
 
     border-color: var(--body-border-color);
     border-width: 3px;
@@ -46,6 +47,7 @@ footer {
 
 .image-and-text {
     max-width: 25%;
+    min-width: 260px;
     border: var(mai) 7px groove;
     /*border-radius: 20px;*/
 }
@@ -117,6 +119,38 @@ li > a {
 
 .invis {
     color: rgba(0, 0, 0, 0);
+}
+
+.menu-toggle-button {
+
+    display: none;
+    position: fixed;
+    right: 0;
+    background-color: white;
+    text-align: center;
+
+    /* from .section-terminal, mostly */
+    animation: small-text-animation 2s alternate infinite;
+    background-image: var(--fallout-terminal);
+    border: var(--small-text-border-color) 7px groove;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* WARNING ! ugly responsive stuff here */
+
+@media screen and (max-width: 935px) {
+
+    .image-and-text {
+        display: none;
+    }
+    .image-and-text.displayed {
+        display: initial;
+    }
+
+    .menu-toggle-button {
+        display: initial;
+    }
 }
 
 /*

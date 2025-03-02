@@ -12,8 +12,23 @@ import { Title } from "@angular/platform-browser";
 })
 
 export class PortfolioMainComponent {
+
+    private menuIsToggled = false;
     
     constructor(private titleService: Title) {
         this.titleService.setTitle('Portfolio');
+    }
+
+    toggleMenu() {
+        this.menuIsToggled = !this.menuIsToggled;
+
+        const button = document.getElementsByClassName('menu-toggle-button')[0];
+        button.innerHTML = this.menuIsToggled ? 'hide menu >>>>' : '<<<< display menu';
+
+        const menu = document.getElementsByClassName('image-and-text')[0];
+        if (this.menuIsToggled)
+            menu.classList.add('displayed');
+        else
+            menu.classList.remove('displayed');
     }
 }
