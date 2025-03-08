@@ -70,7 +70,8 @@ footer {
 
 .logos {
     border-left: var(--footer-border-color) groove 3px;
-    max-width: 25%;
+    flex: 0 1;
+    min-width: max-content;
 }
 
 .small-text {
@@ -130,6 +131,10 @@ li > a {
     border: var(--small-text-border-color) 7px groove;
     margin-right: 10px;
     margin-left: 10px;
+}
+
+.footer-quote {
+  flex: 1;
 }
 
 /* WARNING ! ugly responsive stuff here */
