@@ -39,7 +39,7 @@ export class PortfolioMainComponent {
         this.quotes.forEach((_dummy, index) => this.quoteIndexesLeft.add(index));
 
       const array = Array.from(this.quoteIndexesLeft.values()); // converts the set to an array
-      const index = array[Math.floor(Math.random() * array.length - 1)]; // get a random index from the array of indexes
+      const index = array[Math.floor(Math.random() * (array.length - 1))]; // get a random index from the array of indexes
       
       this.currentQuote.set(this.quotes[index]); // updates the quote
 
