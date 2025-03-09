@@ -11,7 +11,7 @@ export class QuoteService {
     '"When I\'m stressed, I create a toxic atmosphere. So people don\'t give me work."', // https://youtu.be/XAeKtyL2m-Q&t=300
     '"Well, as Harisson Ford once said : If we would have asked the people what they wanted, they would have asked for a faster C++."', // https://youtu.be/TGfQu0bQTKc&t=0
     '"And which part did you write in Rust ? The front-end or the back-end ?", "... N- No the Browser."', // https://youtu.be/TGfQu0bQTKc&t=118
-    '"Is Rust good for Game Development ? There are currently 5 Games written in Rust. And 50 Game Engines"', // https://youtu.be/TGfQu0bQTKc&t=168
+    '"Is Rust good for Game Development ? Rust is good for everything ! There are currently 5 Games written in Rust. And 50 Game Engines."', // https://youtu.be/TGfQu0bQTKc&t=168
     '"Dude, did you port Doom onto the microwave ?", "... This was a microwave ?"', // https://youtu.be/kKAue9DiHc0&t=6
     '"Yo, our network\'s down.", "Perfect, I was stress testing it."', // https://youtu.be/kKAue9DiHc0&t=17
     '"Yo, did you see this new AR library on Twitter ?", "Doesn\'t fit our use case.", "... It was out since today, when have you tried it ?", "... It\'s my library."', // https://youtu.be/kKAue9DiHc0&t=50
@@ -36,6 +36,7 @@ export class QuoteService {
     '"You\'re sick ? You\'re not sick okay ? This, is America."', // https://youtu.be/GwQ3YE_O6l4&t=180
     '"Look, it\'s not that easy to redefine our service offering from Web3 to AI.", "Hm... What about Quantum Computing ?"', // https://youtu.be/GwQ3YE_O6l4&t=295
     '"We keep our satisfaction score at 5. Always. Because we keep changing up the rating box layout, so that the only link that works, is the 5."', // https://youtu.be/YeNBsW0Slrk&t=81
+    '"I also do Calisthenics, Functional training, Propriosceptive training, Cardio, Low carbs diet... But I don\'t really work out, so ..."', // https://youtu.be/Pw1UokzMQ6k&t=174
   ];
 
   constructor() { }
