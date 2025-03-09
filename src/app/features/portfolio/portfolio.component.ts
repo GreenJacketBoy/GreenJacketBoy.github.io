@@ -2,7 +2,7 @@ import { NgOptimizedImage } from "@angular/common";
 import { Component, OnInit, signal } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { Title } from "@angular/platform-browser";
-import { QuoteService } from "../services/quote.service";
+import { QuoteService } from "../../services/quote.service";
 
 
 @Component({

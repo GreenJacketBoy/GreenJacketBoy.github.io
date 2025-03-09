@@ -1,16 +1,16 @@
 import { Routes } from '@angular/router';
-import { PortfolioMainComponent } from '../portfolio/portfolio.component';
-import { AboutMeComponent } from '../portfolio/aboutme/aboutme.component';
-import { SkillJavaComponent } from '../portfolio/skills/java/java.component';
-import { SkillsComponent } from '../portfolio/skills/skills.component';
-import { SkillWebComponent } from '../portfolio/skills/web/web.component';
-import { SkillSqlComponent } from '../portfolio/skills/sql/sql.component';
-import { ProjectsComponent } from '../portfolio/projects/projects.component';
-import { ProjectsSaeTrainsComponent } from '../portfolio/projects/sae-trains/sae-trains.component';
-import { ProjectsNdi2024Component } from '../portfolio/projects/ndi-2024/ndi-2024.component';
-import { ProjectsSaeS3Component } from '../portfolio/projects/sae-s3/sae-s3.component';
-import { InfoComponent } from '../portfolio/info/info.component';
-import { InfoSaeComponent } from '../portfolio/info/sae/sae.component';
+import { PortfolioMainComponent } from './features/portfolio/portfolio.component';
+import { AboutMeComponent } from './features/portfolio/aboutme/aboutme.component';
+import { SkillJavaComponent } from './features/portfolio/skills/java/java.component';
+import { SkillsComponent } from './features/portfolio/skills/skills.component';
+import { SkillWebComponent } from './features/portfolio/skills/web/web.component';
+import { SkillSqlComponent } from './features/portfolio/skills/sql/sql.component';
+import { ProjectsComponent } from './features/portfolio/projects/projects.component';
+import { ProjectsSaeTrainsComponent } from './features/portfolio/projects/sae-trains/sae-trains.component';
+import { ProjectsNdi2024Component } from './features/portfolio/projects/ndi-2024/ndi-2024.component';
+import { ProjectsSaeS3Component } from './features/portfolio/projects/sae-s3/sae-s3.component';
+import { InfoComponent } from './features/portfolio/info/info.component';
+import { InfoSaeComponent } from './features/portfolio/info/sae/sae.component';
 
 export const routes: Routes = [
 
