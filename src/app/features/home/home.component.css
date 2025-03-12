@@ -1,0 +1,102 @@
+body {
+  /* background: linear-gradient(20deg, rgb(194, 131, 96) , rgb(237, 189, 211), rgb(229, 178, 185), rgb(202, 164, 191), rgb(184, 146, 167), rgb(196, 146, 123)); */
+  /* background: linear-gradient(35deg, rgb(216, 191, 145), rgb(226, 206, 105), rgb(244, 230, 189), rgb(247, 242, 210), rgb(247, 251, 234), rgb(247, 242, 210), rgb(247, 228, 172), rgb(226, 206, 105), rgb(227, 203, 157)); */
+  /* background: linear-gradient(25deg, rgb(206, 181, 135), rgb(216, 196, 95), rgb(234, 220, 179), rgb(237, 232, 200), rgb(237, 241, 224), rgb(237, 232, 200), rgb(237, 218, 162), rgb(216, 196, 95), rgb(217, 193, 147)); */
+  background: linear-gradient(15deg, rgb(196, 171, 125), rgb(206, 186, 85), rgb(224, 210, 169), rgb(227, 222, 190), rgb(227, 231, 214), rgb(227, 222, 190), rgb(227, 208, 152), rgb(206, 186, 85), rgb(207, 183, 137));
+  
+  color: rgb(250, 250, 250);
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  border-top: var(--footer-border-color) groove 3px;
+
+  flex-shrink: 0;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+h1, hr, a {
+  color: #ffe600;
+}
+
+.train-station-element{
+  margin-left: 25px;
+}
+
+.train-station-element h2 {
+  margin-bottom: 0;
+}
+.train-station-element p {
+  margin-top: 0;
+}
+
+hr {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+/* les styles globaux sont dans src/styles.css */
+
+.main-content {
+  font-size: large;
+  max-width: 1075px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+
+  border-left: 3px groove #ecd11e;
+  border-right: 3px groove #ecd11e;
+  border-bottom: 3px groove #ecd11e;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logos {
+  border-left: var(--footer-border-color) groove 3px;
+  flex: 0 1;
+  min-width: max-content;
+}
+
+.small-text {
+  margin: 10px;
+  background-image: var(--fallout-terminal);
+  border: var(--small-text-border-color) 7px groove;
+}
+
+.footer-quote {
+  flex: 1;
+}
+
+.concrete {
+    /* concrete image background comes from here : https://blog.spoongraphics.co.uk/freebies/10-free-seamless-subtle-grunge-concrete-textures */
+    background-image: url('../../../assets/images/Subtle-Grunge-Texture-2-Seamless.webp');
+}
+
+/* RESPONSIVE HERE */
+
+/* why 646 pixels ?
+    - 600 : width of the image
+    - 20 * 2 : padding
+    - 3 * 2 : width of the border
+*/
+@media screen and (max-width: 646px) {
+  #home-image {
+    width: 100%;
+    height:auto;
+  }
+}

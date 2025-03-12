@@ -28,10 +28,13 @@ footer {
      list-style-type: circle;
  }
 
-.body-content {
+.main-content {
+    display: flex;
     max-width: 1075px;
+
     margin-left: auto;
     margin-right: auto;
+    padding: 10px;
 
     border-color: var(--body-border-color);
     border-width: 3px;
@@ -39,17 +42,10 @@ footer {
     border-radius: 20px;
 }
 
-.tout {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px;
-}
-
 .image-and-text {
     max-width: 25%;
     min-width: 260px;
     border: var(mai) 7px groove;
-    /*border-radius: 20px;*/
 }
 
 .picofme {
@@ -152,9 +148,3 @@ li > a {
         display: initial;
     }
 }
-
-/*
-.section-terminal h3:hover {
-    animation: small-text-hover-animation 2s alternate infinite;
-    background-color: #3fa800;
-}*/

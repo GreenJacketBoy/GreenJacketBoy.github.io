@@ -11,13 +11,14 @@ import { ProjectsNdi2024Component } from './features/portfolio/projects/ndi-2024
 import { ProjectsSaeS3Component } from './features/portfolio/projects/sae-s3/sae-s3.component';
 import { InfoComponent } from './features/portfolio/info/info.component';
 import { InfoSaeComponent } from './features/portfolio/info/sae/sae.component';
+import { HomeComponent } from './features/home/home.component';
 
 export const routes: Routes = [
 
-    // these 2 redirections might be temporary (as I'll add more stuff to the website)
-    // basically an url that empty or just "/Portfolio" redirects to the "About Me" page of my portfolio
-    { path: '', redirectTo: '/Portfolio/AboutMe', pathMatch: 'full' }, 
-    { path: 'Portfolio', redirectTo: '/Portfolio/AboutMe', pathMatch: 'full' },
+    
+  { path: 'Portfolio', redirectTo: '/Portfolio/AboutMe', pathMatch: 'full' },
+
+  { path: '', component: HomeComponent }, 
 
     { 
         path: 'Portfolio', 
