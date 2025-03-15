@@ -12,6 +12,7 @@ import { ProjectsSaeS3Component } from './features/portfolio/projects/sae-s3/sae
 import { InfoComponent } from './features/portfolio/info/info.component';
 import { InfoSaeComponent } from './features/portfolio/info/sae/sae.component';
 import { HomeComponent } from './features/home/home.component';
+import { QAComponent } from './features/q-and-a/q-and-a.component';
 
 export const routes: Routes = [
 
@@ -19,6 +20,8 @@ export const routes: Routes = [
   { path: 'Portfolio', redirectTo: '/Portfolio/AboutMe', pathMatch: 'full' },
 
   { path: '', component: HomeComponent }, 
+
+  { path: 'QA', component: QAComponent },
 
     { 
         path: 'Portfolio', 

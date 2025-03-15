@@ -87,6 +87,10 @@ hr {
     background-image: url('../../../assets/images/Subtle-Grunge-Texture-2-Seamless.webp');
 }
 
+.home-page-image {
+  cursor: default;
+}
+
 /* RESPONSIVE HERE */
 
 /* why 646 pixels ?

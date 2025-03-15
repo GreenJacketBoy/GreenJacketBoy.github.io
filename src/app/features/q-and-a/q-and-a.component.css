@@ -1,0 +1,25 @@
+@import url(../home/home.component.css);
+
+h1 {
+  color: white;
+}
+
+.qa-item {
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
+
+.qa-item p {
+  margin: 0;
+}
+
+.qa-item p:first-child {
+  font-weight: bold;
+  text-decoration: underline solid white 2px;
+}
+
+.qa-item p span {
+  color: #ffe600;
+  font-weight: bold;
+  display: inline-block; /* this line separates the text-decoration styling of the <span>, from the <p> containing it*/
+}

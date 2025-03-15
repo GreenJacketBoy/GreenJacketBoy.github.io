@@ -2,7 +2,7 @@
     <main>
         <div class="main-content concrete">
           <!-- used this really cool font for the image : https://www.fontspace.com/unione-force-stencil-font-f59800 -->
-            <img id="home-image" ngSrc="assets/images/home_page.webp" width="600" height="108" alt="Home Page" priority>
+            <a routerLink="" class="home-page-image"><img id="home-image" ngSrc="assets/images/home_page.webp" width="600" height="108" alt="Home Page" priority></a>
 
               <hr>
 
@@ -21,7 +21,7 @@
 
                   <div class="train-station-element">
                     <h2><a routerLink="/Portfolio">Portfolio</a></h2>
-                    <p>Written in french (faq : What's with  the languages ?), it is a aimed at companies and recruiters, you can see it as my resume, but with a lot more content, details and personal touch.</p>
+                    <p>Written in french (faq : <a routerLink="QA" fragment="whats-up-with-all-the-languages">What's with  the languages ?</a>), it is a aimed at companies and recruiters, you can see it as my resume, but with a lot more content, details and personal touch.</p>
                   </div>
 
                   <div class="train-station-element">

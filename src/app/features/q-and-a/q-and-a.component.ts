@@ -6,13 +6,13 @@ import { QuoteService } from "../../services/quote.service";
 
 
 @Component({
-    selector: 'Home',
+    selector: 'q-and-a',
     imports: [NgOptimizedImage, RouterModule],
-    templateUrl: './home.component.html',
-    styleUrl: './home.component.css'
+    templateUrl: './q-and-a.component.html',
+    styleUrl: './q-and-a.component.css'
 })
 
-export class HomeComponent {
+export class QAComponent {
 
     private quotes!: Array<string>;
     private quoteIndexesLeft: Set<number> = new Set(); // the indexes of the quotes that haven't been displayed yet
@@ -20,7 +20,7 @@ export class HomeComponent {
     public currentQuote = signal('*** loading quote ***');
     
     constructor(private titleService: Title, private quoteService: QuoteService) {
-        this.titleService.setTitle('Home');
+        this.titleService.setTitle('Q&A');
         this.quotes = this.quoteService.getFooterQuotes();
 
         this.nextQuote();

@@ -1,0 +1,83 @@
+<body>
+  <main>
+    <div class="main-content concrete">
+      <!-- used this really cool font for the image : https://www.fontspace.com/unione-force-stencil-font-f59800 -->
+        <a routerLink="" class="home-page-image"><img id="home-image" ngSrc="assets/images/home_page.webp" width="600" height="108" alt="Home Page" priority></a>
+
+        <h1>Questions and Answers :</h1>
+
+        <hr>
+
+        <div class="qa-item" id="hi">
+          <p><span>Q :&nbsp;</span> Hi ! </p>
+          <p><span>A :&nbsp;</span> Hi ! </p>
+        </div>
+
+
+        <div class="qa-item" id="whats-up-with-all-the-languages">
+          <p><span>Q :&nbsp;</span> The Website is in english but your portfolio is all written in french, why is that ? </p>
+          <p><span>A :&nbsp;</span> Originally, this was just my portfolio Website, so everything was in French, as my portfolio would be mostly visited by french speaking people. I then had the idea to add more than just my portfolio to this Website, mainly because I wanted a place to write articles about whatever came to my mind, and unlike my portfolio, the target audience for them is not limited to french speakers. That and I find it easier to express my thoughts in English. </p>
+        </div>
+
+
+        <div class="qa-item" id="whats-up-with-all-the-themes">
+          <p><span>Q :&nbsp;</span>Also what's up with all the different styles/themes ? </p>
+          <p><span>A :&nbsp;</span> I really like CSS styling. Also the theme of my portfolio wasn't going well with the home page, and then I thought "At this point, let's just make a different style for each section". </p>
+        </div>
+
+
+        <div class="qa-item" id="why-doesnt-the-Q&A-have-a-custom-theme">
+          <p><span>Q :&nbsp;</span> Then why doesn't this Q&A page have a custom theme too ? </p>
+          <p><span>A :&nbsp;</span> I'm not making a custom theme for a Q&A page consisting mostly of bad humor. </p>
+        </div>
+
+
+        <div class="qa-item" id="green-jacket-boy">
+          <p><span>Q :&nbsp;</span> "Green Jacket Boy" ? </p>
+          <p><span>A :&nbsp;</span> I'm fairly young, I identify as male, and usually wear a green jacket. Although this name is mostly an online identifier, and for practicality, you can refer to me as Yann, Green, or Glenn </p>
+        </div>
+
+
+        <div class="qa-item" id="shouldn't-your-portfolio-be-more-serious">
+          <p><span>Q :&nbsp;</span> I read some of your portfolio, shouldn't it be more serious if it is aimed at potential recruiters ? </p>
+          <p><span>A :&nbsp;</span> I don't think it should. First I think people often forget that recruiters are also humans, and they probably appreciate some humor even in a portfolio. Second it's an expression of my personality, if they dislike it that much, then it's probably best for everyone to not go further. Also I think it's a nice touch and contribute to make it stand out. </p>
+        </div>
+
+
+        <div class="qa-item" id="which-os-and-software">
+          <p><span>Q :&nbsp;</span> Which OS and software do you use ? </p>
+          <p><span>A :&nbsp;</span> Ah that's the kind of questions I like to answer, not the typical "can you list 3 flaws about yourself". I use Linux, the EndeavourOS distibution to be precise. For the Desktop Environment/Window Manager, it's either KDE or Hyprland, depending on the day. And as for my Code Editor, I use mainly VS Code, although I'm experimenting a lot with Kakoune. </p>
+        </div>
+
+
+        <div class="qa-item" id="list-3-flaws-about-yourself">
+          <p><span>Q :&nbsp;</span> Can you list 3 flaws about yourself ? </p>
+          <p><span>A :&nbsp;</span> ... No. </p>
+        </div>
+
+
+        <div class="qa-item" id="list-3-qualities-about-yourself">
+          <p><span>Q :&nbsp;</span> Can you list 3 qualities of yours ? </p>
+          <p><span>A :&nbsp;</span> I'm curious, I like to use technologies to their maximum potential, and I'm a very creative person. </p>
+        </div>
+
+
+        <div class="qa-item" id="do-i-have-to-click-the-go-back-button">
+          <p><span>Q :&nbsp;</span> Are you telling me that I have to click the Go Back button of my browser to get back to the real Home Page ? </p>
+          <p><span>A :&nbsp;</span> I'm ... strugling to understand why this matters so much, but if you want, the Home Page image at the top redirects you to the Home Page. </p>
+        </div>
+
+      </div>
+  </main>
+  <footer>
+    <div class="footer concrete">
+    <div class="section-terminal footer-quote" (click)="nextQuote()"><h3>{{ currentQuote() }}</h3></div>
+    <div class="logos">
+      <a href="assets/files/CV-Yann-Bodiguel.pdf"><img ngSrc="assets/images/cv.webp" alt="CV" width="50" height="50" priority></a>
+      <a href="https://www.deviantart.com/greenjacketboy"><img ngSrc="assets/images/deviantart_logo.webp" alt="deviantart-logo" width="50" height="50" priority></a>
+      <a href="https://www.linkedin.com/in/green-jacket/"><img ngSrc="assets/images/linkedin_logo.webp" alt="linkedin-logo" width="50" height="50" priority></a>
+      <a href="https://github.com/GreenJacketBoy"><img ngSrc="assets/images/github_logo.webp" alt="github-logo" width="50" height="50" priority></a>
+    </div>
+    </div>
+  </footer>
+</body>
