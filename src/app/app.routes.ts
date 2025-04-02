@@ -14,6 +14,7 @@ import { InfoSaeComponent } from './features/portfolio/info/sae/sae.component';
 import { HomeComponent } from './features/home/home.component';
 import { QAComponent } from './features/q-and-a/q-and-a.component';
 import { ArticlesComponent } from './features/articles/articles.component';
+import { ArticlesHubComponent } from './features/articles/hub/hub.component';
 
 export const routes: Routes = [
 
@@ -60,7 +61,7 @@ export const routes: Routes = [
     component: ArticlesComponent,
     children: [
 
-      // soon
+      { path: '', component: ArticlesHubComponent },
       
     ]
   },

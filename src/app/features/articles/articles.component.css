@@ -1,7 +1,4 @@
 body {
-  /* background: linear-gradient(20deg, rgb(194, 131, 96) , rgb(237, 189, 211), rgb(229, 178, 185), rgb(202, 164, 191), rgb(184, 146, 167), rgb(196, 146, 123)); */
-  /* background: linear-gradient(35deg, rgb(216, 191, 145), rgb(226, 206, 105), rgb(244, 230, 189), rgb(247, 242, 210), rgb(247, 251, 234), rgb(247, 242, 210), rgb(247, 228, 172), rgb(226, 206, 105), rgb(227, 203, 157)); */
-  /* background: linear-gradient(25deg, rgb(206, 181, 135), rgb(216, 196, 95), rgb(234, 220, 179), rgb(237, 232, 200), rgb(237, 241, 224), rgb(237, 232, 200), rgb(237, 218, 162), rgb(216, 196, 95), rgb(217, 193, 147)); */
   background: radial-gradient(circle, #000 20%, #154fa1 32%, #000 46%, #000 75%, #154fa1 85%, #000 95%);
   color: rgb(250, 250, 250);
 
@@ -34,30 +31,25 @@ main {
   background-color: rgb(0, 0, 0, 0.6);
 }
 
-.small-text {
-  margin: 10px;
-  background-image: var(--fallout-terminal);
-  border: var(--small-text-border-color) 7px groove;
+hr {
+  margin-left: 2%;
+  margin-right: 2%;
+  color: var(--articles-border-color);
 }
 
-.concrete {
-    /* concrete image background comes from here : https://blog.spoongraphics.co.uk/freebies/10-free-seamless-subtle-grunge-concrete-textures */
-    background-image: var(--concrete-background);
-}
-
-.home-page-image {
+.articles-image {
   cursor: default;
 }
 
 /* RESPONSIVE HERE */
 
-/* why 646 pixels ?
-    - 600 : width of the image
+/* why 443 pixels ?
+    - 397 : width of the image
     - 20 * 2 : padding
     - 3 * 2 : width of the border
 */
-@media screen and (max-width: 646px) {
-  #home-image {
+@media screen and (max-width: 443px) {
+  #articles-image {
     width: 100%;
     height:auto;
   }
