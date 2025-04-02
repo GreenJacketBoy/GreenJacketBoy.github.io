@@ -1,24 +1,26 @@
-import { NgOptimizedImage } from "@angular/common";
-import { Component, OnInit, signal } from "@angular/core";
+import { NgClass, NgOptimizedImage } from "@angular/common";
+import { Component, Input, OnInit, signal, ViewChild, viewChild } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { Title } from "@angular/platform-browser";
 import { QuoteService } from "../../services/quote.service";
-import { FooterComponent } from "../footer/footer.component";
 
 
 @Component({
-    selector: 'Home',
-    imports: [NgOptimizedImage, RouterModule, FooterComponent],
-    templateUrl: './home.component.html',
-    styleUrl: './home.component.css'
+    selector: 'custom-footer',
+    imports: [NgOptimizedImage, RouterModule, NgClass],
+    templateUrl: './footer.component.html',
+    styleUrl: './footer.component.css'
 })
 
-export class HomeComponent {
+export class FooterComponent {
 
     private quotes!: Array<string>;
     private quoteIndexesLeft: Set<number> = new Set(); // the indexes of the quotes that haven't been displayed yet
 
     public currentQuote = signal('*** loading quote ***');
+
+    @Input('style')
+    public style!: 'home' | 'portfolio' | 'blog';
     
     constructor(private titleService: Title, private quoteService: QuoteService) {
         this.titleService.setTitle('Home');

@@ -3,11 +3,12 @@ import { Component, OnInit, signal } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { Title } from "@angular/platform-browser";
 import { QuoteService } from "../../services/quote.service";
+import { FooterComponent } from "../footer/footer.component";
 
 
 @Component({
     selector: 'portfolio',
-    imports: [NgOptimizedImage, RouterModule],
+    imports: [NgOptimizedImage, RouterModule, FooterComponent],
     templateUrl: './portfolio.component.html',
     styleUrl: './portfolio.component.css'
 })

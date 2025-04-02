@@ -56,20 +56,9 @@ hr {
   margin-right: auto;
   padding: 20px;
 
-  border-left: 3px groove #ecd11e;
-  border-right: 3px groove #ecd11e;
-  border-bottom: 3px groove #ecd11e;
-}
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-}
-
-.logos {
-  border-left: var(--footer-border-color) groove 3px;
-  flex: 0 1;
-  min-width: max-content;
+  border-left: 3px groove var(--home-border-color);
+  border-right: 3px groove var(--home-border-color);
+  border-bottom: 3px groove var(--home-border-color);
 }
 
 .small-text {
@@ -78,13 +67,9 @@ hr {
   border: var(--small-text-border-color) 7px groove;
 }
 
-.footer-quote {
-  flex: 1;
-}
-
 .concrete {
     /* concrete image background comes from here : https://blog.spoongraphics.co.uk/freebies/10-free-seamless-subtle-grunge-concrete-textures */
-    background-image: url('../../../assets/images/Subtle-Grunge-Texture-2-Seamless.webp');
+    background-image: var(--concrete-background);
 }
 
 .home-page-image {

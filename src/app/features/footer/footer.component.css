@@ -1,0 +1,36 @@
+/* global styles are in src/styles.css */
+
+footer {
+  flex-shrink: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer.home {
+  /* concrete image background comes from here : https://blog.spoongraphics.co.uk/freebies/10-free-seamless-subtle-grunge-concrete-textures */
+  background-image: var(--concrete-background);
+  border-top: var(--footer-border-color) groove 3px;
+}
+
+.footer.portfolio {
+  border-top: var(--footer-border-color) groove 3px;
+}
+
+.logos {
+  border-left: var(--footer-border-color) groove 3px;
+  flex: 0 1;
+  min-width: max-content;
+}
+
+.small-text {
+  margin: 10px;
+  background-image: var(--fallout-terminal);
+  border: var(--small-text-border-color) 7px groove;
+}
+
+.footer-quote {
+  flex: 1;
+}
