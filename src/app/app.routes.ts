@@ -13,6 +13,7 @@ import { InfoComponent } from './features/portfolio/info/info.component';
 import { InfoSaeComponent } from './features/portfolio/info/sae/sae.component';
 import { HomeComponent } from './features/home/home.component';
 import { QAComponent } from './features/q-and-a/q-and-a.component';
+import { ArticlesComponent } from './features/articles/articles.component';
 
 export const routes: Routes = [
 
@@ -23,30 +24,45 @@ export const routes: Routes = [
 
   { path: 'QA', component: QAComponent },
 
-    { 
-        path: 'Portfolio', 
-        component: PortfolioMainComponent,
-        children: [
+  { 
+    path: 'Portfolio', 
+    component: PortfolioMainComponent,
+    children: [
 
-            { path: 'AboutMe', component: AboutMeComponent },
+      { path: 'AboutMe', component: AboutMeComponent },
 
-            { path: 'Skills', component: SkillsComponent, children: [
+      { path: 'Skills', component: SkillsComponent, children: [
 
-                { path: 'Java', component: SkillJavaComponent },
-                { path: 'Web', component: SkillWebComponent },
-                { path: 'SQL', component: SkillSqlComponent }
-            ]},
+        { path: 'Java', component: SkillJavaComponent },
+        { path: 'Web', component: SkillWebComponent },
+        { path: 'SQL', component: SkillSqlComponent },
 
-            { path: 'Projects', component: ProjectsComponent, children: [
+      ]},
 
-                { path: 'SaeTrains', component: ProjectsSaeTrainsComponent },
-                { path: 'SaeS3', component: ProjectsSaeS3Component },
-                { path: 'NDI2024', component: ProjectsNdi2024Component }
-            ]},
+      { path: 'Projects', component: ProjectsComponent, children: [
 
-            { path: 'Info', component: InfoComponent, children: [
-                { path: 'SAE', component: InfoSaeComponent }
-            ]}
-        ] 
-    },  
+        { path: 'SaeTrains', component: ProjectsSaeTrainsComponent },
+        { path: 'SaeS3', component: ProjectsSaeS3Component },
+        { path: 'NDI2024', component: ProjectsNdi2024Component },
+
+      ]},
+
+      { path: 'Info', component: InfoComponent, children: [
+
+        { path: 'SAE', component: InfoSaeComponent },
+        
+      ]},
+    ]
+  },
+
+  { 
+    path: 'Articles', 
+    component: ArticlesComponent,
+    children: [
+
+      // soon
+      
+    ]
+  },
+
 ];

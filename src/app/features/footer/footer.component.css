@@ -19,6 +19,12 @@ footer {
   border-top: var(--footer-border-color) groove 3px;
 }
 
+.footer.articles {
+  border-top: var(--footer-border-color) groove 3px;
+  backdrop-filter: blur(35px);
+  background-color: rgb(0, 0, 0, 0.6);
+}
+
 .logos {
   border-left: var(--footer-border-color) groove 3px;
   flex: 0 1;

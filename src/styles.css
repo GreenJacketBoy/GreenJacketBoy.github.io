@@ -8,6 +8,7 @@
     --fallout-terminal: url("assets/images/fallout-terminal.webp");
     --concrete-background: url("assets/images/Subtle-Grunge-Texture-2-Seamless.webp");
     --home-border-color: #ecd11e;
+    --articles-border-color: #154fa1;
 }
 
 @keyframes small-text-hover-animation {

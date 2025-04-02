@@ -20,7 +20,7 @@ export class FooterComponent {
     public currentQuote = signal('*** loading quote ***');
 
     @Input('style')
-    public style!: 'home' | 'portfolio' | 'blog';
+    public style!: 'home' | 'portfolio' | 'articles';
     
     constructor(private titleService: Title, private quoteService: QuoteService) {
         this.titleService.setTitle('Home');
