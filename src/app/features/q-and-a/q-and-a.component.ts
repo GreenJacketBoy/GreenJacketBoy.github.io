@@ -3,45 +3,20 @@ import { Component, OnInit, signal } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { Title } from "@angular/platform-browser";
 import { QuoteService } from "../../services/quote.service";
+import { FooterComponent } from "../footer/footer.component";
 
 
 @Component({
     selector: 'q-and-a',
-    imports: [NgOptimizedImage, RouterModule],
+    imports: [NgOptimizedImage, RouterModule, FooterComponent],
     templateUrl: './q-and-a.component.html',
     styleUrl: './q-and-a.component.css'
 })
 
 export class QAComponent {
 
-    private quotes!: Array<string>;
-    private quoteIndexesLeft: Set<number> = new Set(); // the indexes of the quotes that haven't been displayed yet
 
-    public currentQuote = signal('*** loading quote ***');
-    
-    constructor(private titleService: Title, private quoteService: QuoteService) {
+    constructor(private titleService: Title) {
         this.titleService.setTitle('Q&A');
-        this.quotes = this.quoteService.getFooterQuotes();
-
-        this.nextQuote();
-    }
-
-    /**
-     * This will go through each and every quote in the list in a random order.
-     * Only as I'm writing this comment I realize that I probably coule have used
-     * a built in shuffle method, but I'm not going to let all that work go to waste.
-     * Also it would probably be 0.5% less efficient than what I did. 
-     */
-    nextQuote() {
-
-      if (this.quoteIndexesLeft.size === 0) // refills the quote index list if it is empty
-        this.quotes.forEach((_dummy, index) => this.quoteIndexesLeft.add(index));
-
-      const array = Array.from(this.quoteIndexesLeft.values()); // converts the set to an array
-      const index = array[Math.floor(Math.random() * (array.length - 1))]; // get a random index from the array of indexes
-      
-      this.currentQuote.set(this.quotes[index]); // updates the quote
-
-      this.quoteIndexesLeft.delete(index);
     }
 }
