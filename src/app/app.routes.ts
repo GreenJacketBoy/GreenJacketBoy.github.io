@@ -15,6 +15,7 @@ import { HomeComponent } from './features/home/home.component';
 import { QAComponent } from './features/q-and-a/q-and-a.component';
 import { ArticlesComponent } from './features/articles/articles.component';
 import { ArticlesHubComponent } from './features/articles/hub/hub.component';
+import { ArticlesArchMMAComponent } from './features/articles/articles/arch-mma/arch-mma.component';
 
 export const routes: Routes = [
 
@@ -62,6 +63,7 @@ export const routes: Routes = [
     children: [
 
       { path: '', component: ArticlesHubComponent },
+      { path: 'Arch_Linux_MMA', component: ArticlesArchMMAComponent },
       
     ]
   },
