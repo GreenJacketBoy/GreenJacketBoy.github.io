@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'ns-aboutme',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './aboutme.component.html',
-//   styleUrl: '../app/aboutme.component.css'4
+  styles: ['.red { color: red }']
 })
 export class AboutMeComponent {
   title = 'About Me';
