@@ -18,22 +18,22 @@
 
                 <li>Prenom : Yann</li>
                 <li>Nom : (Green Jacket) B.</li>
-                <li class="dynamic"><a routerLink=""><span class="arrow">> </span>Page d'accueil</a></li>
-                <li class="dynamic"><a routerLink="AboutMe"><span class="arrow">> </span>About me</a></li>
+                <li class="dynamic" (click)="goTo('')"><span class="arrow">> </span>Page d'accueil</li>
+                <li class="dynamic" (click)="goTo('AboutMe')"><span class="arrow">> </span>About me</li>
 
                 <li>- - - - - - - - - - - - - - - -</li>
                 <li>Compétences : </li>
-                <li class="dynamic"><a routerLink="Skills/Java"><span class="arrow">> </span>Java</a></li>
-                <li class="dynamic"><a routerLink="Skills/Web"><span class="arrow">> </span>Web</a></li>
-                <li class="dynamic"><a routerLink="Skills/SQL"><span class="arrow">> </span>SQL</a></li>
-                <li class="dynamic"><a routerLink="Skills/Angular"><span class="arrow">> </span>Angular</a></li>
+                <li class="dynamic" (click)="goTo('/Portfolio/Skills/Java')" ><span class="arrow">> </span>Java</li>
+                <li class="dynamic" (click)="goTo('/Portfolio/Skills/Web')" ><span class="arrow">> </span>Web</li>
+                <li class="dynamic" (click)="goTo('/Portfolio/Skills/SQL')" ><span class="arrow">> </span>SQL</li>
+                <li class="dynamic" (click)="goTo('/Portfolio/Skills/Angular')" ><span class="arrow">> </span>Angular</li>
 
                 <li>- - - - - - - - - - - - - - - -</li>
                 <li>Projets : </li>
-                <li class="dynamic"><a routerLink="Projects/SaeTrains"><span class="arrow">> </span>SAE Trains</a></li>
-                <li class="dynamic"><a routerLink="Projects/SaeS3"><span class="arrow">> </span>SAE 3eme Semestre</a></li>
-                <li class="dynamic"><a routerLink="Projects/NDI2024"><span class="arrow">> </span>Nuit de l'Info</a></li>
-                <li class="dynamic"><a routerLink="Projects/Stage2025"><span class="arrow">> </span>Stage 2025 (Aqualit)</a></li>
+                <li class="dynamic" (click)="goTo('/Portfolio/Projects/SaeTrains')"><span class="arrow">> </span>SAE Trains</li>
+                <li class="dynamic" (click)="goTo('/Portfolio/Projects/SaeS3')"><span class="arrow">> </span>SAE 3eme Semestre</li>
+                <li class="dynamic" (click)="goTo('/Portfolio/Projects/NDI2024')"><span class="arrow">> </span>Nuit de l'Info</li>
+                <li class="dynamic" (click)="goTo('/Portfolio/Projects/Stage2025')"><span class="arrow">> </span>Stage 2025 (Aqualit)</li>
 
                 </ul>
             </div>

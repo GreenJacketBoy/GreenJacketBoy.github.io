@@ -74,6 +74,10 @@ ul {
     padding-bottom: 2px;
 }
 
+.small-text > ul > li.dynamic {
+  cursor: pointer;
+}
+
 .small-text > ul > .dynamic {
     margin-left: 0;
 }
@@ -83,13 +87,8 @@ ul {
     animation: small-text-hover-animation 2s alternate infinite;
 }
 
-.small-text > ul > li:hover > a > .arrow {
+.small-text > ul > li:hover > .arrow {
     display: revert;
-}
-
-li > a {
-    color: inherit;
-    text-decoration: none;
 }
 
 .invis {

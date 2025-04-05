@@ -1,6 +1,6 @@
 import { NgOptimizedImage } from "@angular/common";
 import { Component, OnInit, signal } from "@angular/core";
-import { RouterModule } from "@angular/router";
+import { Router, RouterModule } from "@angular/router";
 import { Title } from "@angular/platform-browser";
 import { FooterComponent } from "../footer/footer.component";
 
@@ -17,7 +17,7 @@ export class PortfolioMainComponent {
     private menuIsToggled = false;
 
 
-    constructor(private titleService: Title) {
+    constructor(private titleService: Title, private router: Router) {
         this.titleService.setTitle('Portfolio');
     }
 
@@ -32,5 +32,9 @@ export class PortfolioMainComponent {
             menu.classList.add('displayed');
         else
             menu.classList.remove('displayed');
+    }
+
+    goTo(route: String) {
+      this.router.navigate([route]);
     }
 }
