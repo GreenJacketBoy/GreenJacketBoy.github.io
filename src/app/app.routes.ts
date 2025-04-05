@@ -16,6 +16,8 @@ import { QAComponent } from './features/q-and-a/q-and-a.component';
 import { ArticlesComponent } from './features/articles/articles.component';
 import { ArticlesHubComponent } from './features/articles/hub/hub.component';
 import { ArticlesArchMMAComponent } from './features/articles/articles/arch-mma/arch-mma.component';
+import { SkillAngularComponent } from './features/portfolio/skills/angular/angular.component';
+import { ProjectsStage2025Component } from './features/portfolio/projects/stage-2025/stage-2025.component';
 
 export const routes: Routes = [
 
@@ -38,6 +40,7 @@ export const routes: Routes = [
         { path: 'Java', component: SkillJavaComponent },
         { path: 'Web', component: SkillWebComponent },
         { path: 'SQL', component: SkillSqlComponent },
+        { path: 'Angular', component: SkillAngularComponent },
 
       ]},
 
@@ -46,6 +49,7 @@ export const routes: Routes = [
         { path: 'SaeTrains', component: ProjectsSaeTrainsComponent },
         { path: 'SaeS3', component: ProjectsSaeS3Component },
         { path: 'NDI2024', component: ProjectsNdi2024Component },
+        { path: 'Stage2025', component: ProjectsStage2025Component },
 
       ]},
 
