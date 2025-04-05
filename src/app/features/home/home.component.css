@@ -28,6 +28,11 @@ p {
 
 h1, hr, a {
   color: #ffe600;
+  transition: color 0.005s;
+}
+
+a:hover {
+  color: #ffd500;
 }
 
 .train-station-element{
