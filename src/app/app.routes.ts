@@ -18,6 +18,7 @@ import { ArticlesHubComponent } from './features/articles/hub/hub.component';
 import { ArticlesArchMMAComponent } from './features/articles/articles/arch-mma/arch-mma.component';
 import { SkillAngularComponent } from './features/portfolio/skills/angular/angular.component';
 import { ProjectsStage2025Component } from './features/portfolio/projects/stage-2025/stage-2025.component';
+import { ArticlesTypesOfTheoriesComponent } from './features/articles/articles/types-of-theories/types-of-theories.component';
 
 export const routes: Routes = [
 
@@ -68,6 +69,7 @@ export const routes: Routes = [
 
       { path: '', component: ArticlesHubComponent },
       { path: 'Arch_Linux_MMA', component: ArticlesArchMMAComponent },
+      { path: 'Types_of_Theories', component: ArticlesTypesOfTheoriesComponent },
       
     ]
   },
