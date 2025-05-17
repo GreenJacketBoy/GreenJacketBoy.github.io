@@ -20,6 +20,7 @@ import { SkillAngularComponent } from './features/portfolio/skills/angular/angul
 import { ProjectsStage2025Component } from './features/portfolio/projects/stage-2025/stage-2025.component';
 import { ArticlesTypesOfTheoriesComponent } from './features/articles/articles/types-of-theories/types-of-theories.component';
 import { ArticlesRomanticizingSocieties } from './features/articles/articles/romanticizing-societies/romanticizing-societies.component';
+import { ArticlesLimitationsInFiction } from './features/articles/articles/limitations-in-ficiton/limitations-in-ficiton.component';
 
 export const routes: Routes = [
 
@@ -72,6 +73,7 @@ export const routes: Routes = [
       { path: 'Arch_Linux_MMA', component: ArticlesArchMMAComponent },
       { path: 'Types_of_Theories', component: ArticlesTypesOfTheoriesComponent },
       { path: 'Fiction_And_Romanticizing_Societies', component: ArticlesRomanticizingSocieties },
+      { path: 'Limitations_In_Fiction', component: ArticlesLimitationsInFiction },    
       
     ]
   },
