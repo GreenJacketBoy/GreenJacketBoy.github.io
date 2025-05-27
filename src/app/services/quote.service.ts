@@ -37,6 +37,10 @@ export class QuoteService {
     '"Look, it\'s not that easy to redefine our service offering from Web3 to AI.", "Hm... What about Quantum Computing ?"', // https://youtu.be/GwQ3YE_O6l4&t=295
     '"We keep our satisfaction score at 5. Always. Because we keep changing up the rating box layout, so that the only link that works, is the 5."', // https://youtu.be/YeNBsW0Slrk&t=81
     '"I also do Calisthenics, Functional training, Propriosceptive training, Cardio, Low carbs diet... But I don\'t really work out, so ..."', // https://youtu.be/Pw1UokzMQ6k&t=174
+    '"Just do it. Adidas."', // https://youtu.be/JeNS1ZNHQs8?&t=30
+    '"Technical debt ? I\'m not technical."', // https://youtu.be/JeNS1ZNHQs8?&t=95
+    '"This is the craziest Todo list app I\'ve ever built."', // https://youtu.be/JeNS1ZNHQs8?&t=233
+    '"Private key ? The one I put on my github ?"', // https://youtu.be/JeNS1ZNHQs8?&t=281
   ];
 
   constructor() { }
