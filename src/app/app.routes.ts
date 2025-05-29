@@ -21,6 +21,7 @@ import { ProjectsStage2025Component } from './features/portfolio/projects/stage-
 import { ArticlesTypesOfTheoriesComponent } from './features/articles/articles/types-of-theories/types-of-theories.component';
 import { ArticlesRomanticizingSocieties } from './features/articles/articles/romanticizing-societies/romanticizing-societies.component';
 import { ArticlesLimitationsInFiction } from './features/articles/articles/limitations-in-ficiton/limitations-in-ficiton.component';
+import { ArticlesSchoolAndCreativity } from './features/articles/articles/school-and-creativity/school-and-creativity.component';
 
 export const routes: Routes = [
 
@@ -74,6 +75,7 @@ export const routes: Routes = [
       { path: 'Types_of_Theories', component: ArticlesTypesOfTheoriesComponent },
       { path: 'Fiction_And_Romanticizing_Societies', component: ArticlesRomanticizingSocieties },
       { path: 'Limitations_In_Fiction', component: ArticlesLimitationsInFiction },    
+      { path: 'School_And_Creativity', component: ArticlesSchoolAndCreativity },
       
     ]
   },
