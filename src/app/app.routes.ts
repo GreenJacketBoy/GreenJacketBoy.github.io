@@ -23,6 +23,7 @@ import { ArticlesRomanticizingSocieties } from './features/articles/articles/rom
 import { ArticlesLimitationsInFiction } from './features/articles/articles/limitations-in-ficiton/limitations-in-ficiton.component';
 import { ArticlesSchoolAndCreativity } from './features/articles/articles/school-and-creativity/school-and-creativity.component';
 import { ProjectsVirtualEnv } from './features/portfolio/projects/virtual-env/virtual-env.component';
+import { ProjectsSciFiNovel } from './features/portfolio/projects/sci-fi-novel/sci-fi-novel.component';
 
 export const routes: Routes = [
 
@@ -56,6 +57,7 @@ export const routes: Routes = [
         { path: 'NDI2024', component: ProjectsNdi2024Component },
         { path: 'Stage2025', component: ProjectsStage2025Component },
         { path: 'EnvironnementVirtuel', component: ProjectsVirtualEnv },
+        { path: 'RomanScienceFiction', component: ProjectsSciFiNovel },
 
       ]},
 
