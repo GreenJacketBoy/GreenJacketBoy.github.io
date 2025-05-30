@@ -1,0 +1,161 @@
+<div class="section-terminal" target="_blank"><h3>~/$ cat Environnement_virtuel.md</h3></div>
+
+<h1> Les outils consituants mon environnement virtuel quotidien.</h1>
+
+  <p> Mon environnement virtuel est en constante évolution, et cette page risque donc de subir beaucoup de changements. Malgré les termes techniques, j'ai fait de mon mieux afin que cette page soit compréhensible par des personnes n'étant pas nécessairement familières avec l'univers de l'informatique.</p>
+
+<hr>
+<h1> Linux</h1>
+
+  <p> La base de tout mon environnement virtuel est le système d'exploitation, qui est évidemment <a class="pf-link" href="https://en.wikipedia.org/wiki/Linux" target="_blank">Linux</a>, plus particulièrement la distribution <a class="pf-link" href="https://endeavouros.com/about-us/" target="_blank">EndeavourOS</a>.</p>
+
+  <p> Pourquoi Linux ? En restant réaliste, les deux seules autres options sont Windows et MacOS. Je n'ai aucune expérience avec MacOS, mais le fait qu'il ne fonctionne que sur une marque d'ordinateur n'en fait pas un bon choix pour moi. Windows est très fermé, rempli de programmes inutiles qui mangent des ressources, collectent des données personnelles, et l'expérience de développement sur cette plateforme n'est pas très bonne pour pas mal de raisons.</p>
+
+  <p> Linux est un système d'exploitation Open Source, extrêmement rapide et portable (presque tous les serveurs du monde tournent dessus, et Android en est un dérivé). Il existe des dizaines de "distributions", basées sur Linux, parmi les plus populaires chez les utilisateurs : Ubuntu, Mint et Arch. J'utilise EndeavourOS, qui est basé sur Arch, dont le but principal est de simplifier l'installation de ce dernier. Cette distribution possède un des meilleurs gestionnaires de logiciels, permettant, de manière extrêmement aisée (en une commande), l'installation, la désinstallation et la mise à jour de n'importe quel programme de son immense librairie.</p>
+
+<hr>
+<h1> Hyprland</h1>
+
+  <p> <a class="pf-link" href="https://hyprland.org/" target="_blank"> Hyprland</a> est un gestionnaire de fenêtre en mosaïque (tiling window manager). Cela signifie que l'espace de travail est divisé en bureaux (prenant chacun tout l'écran), et dans lesquels sont affichées les fenêtres des applications, dont la taille est gérée automatiquement, de manière à minimiser l'intervention de l'utilisateur là-dessus. Ce gestionnaire est extrêmement customisable, très bien documenté et possédant une communauté relativement large.</p>
+
+  <img class="pf-image" ngSrc="assets/images/ExampleWorkspace.webp" width="1000" height="563" alt="Tiling Window Manager Example" priority>
+  Screenshot provenant de <a class="pf-link" href="https://www.reddit.com/r/unixporn/comments/1j41mqn/hyprland_fighting_against_my_school_to_stay_on/" target="_blank"> Mikyu__ sur Reddit </a>
+
+
+
+<hr>
+<h1> Waybar</h1>
+
+  <p> <a class="pf-link" href="https://github.com/Alexays/Waybar" target="_blank"> Waybar</a> est un remplaçant à la barre des tâches traditionnelle des systèmes d'exploitation. C'est simple, il n'y a rien que vous ne puissiez pas customiser : </p>
+
+  <ul>
+    <li> <p> Vous pouvez la positionner en haut, en bas, à droite, ou à gauche.</p></li>
+    <li> <p> Chaque information affichée est un module dont vous pouvez changer le style.</p></li>
+    <li> <p> Il existe un grand nombre de modules par défaut (date/heure, bureaux, son, ressources utilisées), et vous pouvez même créer la vôtre, ou utiliser ceux de la communauté.</p></li>
+    <li> <p> Tout est peut-être stylisé en utilisant le langage <a class="pf-link" routerLink="/Portfolio/Skills/Web" fragment="HTML-CSS">CSS</a>.</p></li>
+  </ul>
+
+  <p> Pour ma configuration, j'ai tenté de recréer l'<a class="pf-link" href="https://www.qwant.com/?q=sheikah+slate+ui&t=images" target="_blank">interface de la Tablette Sheikah</a>, provenant du jeu vidéo Zelda : BOTW, et de configurer les modules de manière à ce qu'ils soient adaptés à mon workflow. De gauche à droite (voir images) cela donne : </p>
+
+  <ul class="numbered-list" target="_blank"> 
+
+    <li> 
+      <p> <b> Module des bureaux :</b></p>
+      <ul>
+        <li> <p> Par défaut, seuls les 5 premiers sont affichés.</p></li>
+        <li> <p> Les bureaux contenant une ou plusieurs applications sont représentés par une Triforce (3 triangles).</p></li>
+        <li> <p> Les bureaux vides sont représentés par le symbole Sheikah.</p></li>
+        <li> <p> Jaune pour le bureau sur lequel je suis, bleu pour les autres.</p></li>
+      </ul>
+    </li>
+
+    <li> 
+      <p> <b>Date et heure :</b></p>
+      <ul>
+        <li> <p> L'heure actuelle au format 24h. Cliquer sur ce module affiche/cache les secondes.</p></li>
+        <li> <p> La date au format numérique croissant : jour / mois / année.</p></li>
+        <li> <p> Le jour et le mois, car il m'arrive de ne pas immédiatement savoir quel jour il est, et il m'est difficile de convertir le numéro de mois en son nom.</p></li>
+      </ul>
+    </li>
+
+    <li> 
+      <p> <b> Idle Inhibitor : </b> C'est un bouton qui a son utilité de temps en temps, il permet d'activer/désactiver le verrouillage d'écran et la mise en veille automatique après un certain temps d'inactivité.</p>
+    </li>
+
+    <li>
+      <p> <b> Utilisation du processeur : </b> Très utile pour avoir une idée de ce qu'il se passe sur notre ordinateur sans avoir à exécuter un quelconque programme, cliquer dessus nous donne un graphe en temps réel de la répartition sur chaque cœur (voir image 2).</p>
+    </li>
+
+    <li>
+      <p> <b> Température du processeur : </b> Tout comme le précédent, c'est un bon indicateur de ce qu'il se passe sur notre ordinateur. J'ai aussi changé le style pour quelque chose d'assez marrant lorsque la température atteint 60°C.</p>
+    </li>
+
+    <li>
+      <p> <b> Cava :</b> Spectrogramme représentant le son de chaque média joué sur l'ordinateur. Bien que ce ne soit pas le plus utile, je le garde, car je le trouve vraiment cool.</p>
+    </li>
+
+    <li>
+      <p> <b> Utilisation de la RAM : </b> Comme le module d'utilisation du processeur, je remarque qu'il est très intéressant de voir en temps réel quelles activités et quelles applications utilisent beaucoup de mémoire vive.</p>
+    </li>
+
+    <li>
+      <p> <b> Applications en arrière-plan :</b> Souvent occupées uniquement par le gestionnaire de réseau et le service de messagerie Discord.</p>
+    </li>
+
+    <li> 
+      <p> <b> Service Bluetooth : </b> Très utile d'avoir une interface à portée de main.</p>
+    </li>
+    
+    <li>
+      <p> <b> État de la batterie :</b></p>
+      <ul>
+        <li> <p> La barre du bas clignote lentement d'une nuance de rouge à une autre lorsque la batterie passe en dessous de 15%.</p></li>
+        <li> <p> La barre du bas passe en vert clair lorsque l'ordinateur est en charge.</p></li>
+        <li> <p> Survoler le module affiche des informations complémentaires comme le temps restant jusqu'à la charge ou décharge complète de l'appareil.</p></li>
+      </ul>
+    </li>
+
+    <li> <p> <b> Volume du son sortant.</b></p></li>
+    <li> <p> <b> Volume du son entrant.</b></p></li>
+  </ul>
+
+  Image 1 :
+  <img class="pf-image" ngSrc="assets/images/waybar_1.webp" width="1920" height="56" alt="My Waybar 1" priority>
+
+  Image 2 :
+  <img class="pf-image" ngSrc="assets/images/waybar_2.webp" width="1920" height="56" alt="My Waybar 2" priority>
+
+
+<hr>
+<h1> Rofi</h1>
+
+  <p> <a class="pf-link" href="https://github.com/davatorium/rofi" target="_blank"> Rofi</a> est selon moi le meilleur lanceur d'applications, toute plateforme confondue. Il est extrêmement rapide, très customisable avec du style <a class="pf-link" routerLink="/Portfolio/Skills/Web" fragment="HTML-CSS" target="_blank">CSS</a> et le support d'extensions. L'utilisation que j'en fais est assez simple et je ne l'ai pas encore trop configuré : je l'ouvre avec le raccourci Windows+D, et je peux chercher parmi chacune des applications installées, son algorithme de recherche étant extrêmement rapide et optimisé, je trouve généralement n'importe quelle application en 3 lettres.</p>
+
+<hr>
+<h1> VS Code</h1>
+
+  <p> IDE : Integrated Development Environment. Plus simplement : éditeur de code.</p>
+
+  <p> L'édition de code est très différente de l'édition de texte standard et nécessite donc des éditeurs spécialisés. <b>Hautement</b> spécialisés. En dehors des éditeurs modaux tournant dans un terminal, les seules options réellement viables sont les <a class="pf-link" href="https://www.jetbrains.com/ides/" target="_blank">IDE JetBrains</a> et <a class="pf-link" href="https://code.visualstudio.com/" target="_blank"> VS Code</a>. J'ai choisi VS Code comme éditeur principal, car :</p>
+
+  <ul>
+    <li> <p> Les IDE JetBrains sont très lents comparés à VS Code, même sur des ordinateurs plutôt haut de gamme, cela se ressent beaucoup.</p></li>
+    <li> <p> VS Code est Open Source, tandis que la majorité des IDE JetBrains sont propriétaires et payants, ce qui peut ou non être un inconvénient majeur selon les circonstances.</p></li>
+    <li> <p> Je trouve VS Code beaucoup plus customisable, et cela est aidé par la grande quantité d'extensions et de thèmes développés spécialement pour cet éditeur par la communauté Open Source.</p></li>
+    <li> <p> Je trouve globalement l'éditeur mieux pensé pour les développeurs.</p></li>
+  </ul>
+
+  <img class="pf-image" ngSrc="assets/images/vscode.webp" width="1200" height="675" alt="VS Code on this project" priority>
+
+
+<hr>
+<h1> Obsidian</h1>
+
+  <p> <a class="pf-link" href="https://obsidian.md/" target="_blank"> Obsidian</a> est un éditeur de texte tirant avantage du format Markdown, généralement utilisé pour la prise de notes. L'expérience utilisateur est optimale, la syntaxe minimale du Markdown donne une plus grande concentration sur son texte et la gestion des projets est faite de la meilleure des manières possibles. Je l'utilise pour prendre des notes et pour rédiger n'importe quelle sorte de texte n'étant pas du code. J'écris d'ailleurs toute cette page dans Obsidian, avant de la transcrire en <a class="pf-link" routerLink="/Portfolio/Skills/Web" fragment="HTML-CSS">HTML</a> pour mon site.</p>
+
+  <img class="pf-image" ngSrc="assets/images/obsidian.webp" width="1200" height="675" alt="Obsidian on this project" priority>
+
+<hr>
+<h1> Terminal</h1>
+
+  <p> Voici une liste de tout ce qui est lié à une utilisation dans le terminal :</p>
+
+  <h3> kitty :</h3>
+    <p> <a class="pf-link" href="https://sw.kovidgoyal.net/kitty/" target="_blank"> Kitty</a> est un émulateur de terminal. Ce terme décrit un programme permettant d'interagir avec le terminal (ou shell) du système d'exploitation. Il est très rapide dû à son utilisation intelligente des ressources de l'ordinateur, permet l'affichage d'images et d'émojis, et (je pense que vous commencez à voir le paterne, ) est extrêmement customisable (exemple moyennement representatif : le fond d'écran de Terminal sur l'image ci-dessous). Je trouve aussi très agréable son interface minimale, n'ayant rien d'autre que le terminal.</p>
+    <img class="pf-image" ngSrc="assets/images/kitty.webp" width="1200" height="675" alt="Obsidian on this project" priority>
+
+    
+  <h3> yazi :</h3>
+    <p> <a class="pf-link" href="https://github.com/sxyazi/yazi" target="_blank"> Yazi</a> est un explorateur de fichiers utilisable uniquement dans un terminal et uniquement avec le clavier. En utilisant les <a class="pf-link" href="https://vim.rtorr.com/" target="_blank">raccourcis claviers de Vim</a> (comme HJKL pour se déplacer, avec des dizaines plus avancées), naviguer et effectuer des opérations sur des fichiers devient beaucoup plus rapide qu'en utilisant un explorateur de fichier standard. Comme toujours, cet outil est d'une vitesse fulgurante (développé en Rust), très customisable et supporte même la prévisualisation de documents textes, images, PDF et plus. </p>
+    <img class="pf-image" ngSrc="assets/images/yazi.webp" width="1200" height="675" alt="Obsidian on this project" priority>
+
+
+  <h3> git</h3>
+    <p> <a class="pf-link" href="https://github.com/git-guides#what-is-git" target="_blank"> Git</a> est l'outil de versioning de code utilisé par chaque développeur sur Terre. Il permet de stocker chaque version d'un projet de manière économe, de naviguer facilement entre ces versions, de séparer un projet en plusieurs branches que l'on peut ensuite rassembler ... et mille autres choses que je n'ai pas le temps d'expliquer ici. </p>
+    <p> En dehors des conflits lors d'un merge (ce n'est pas important à comprendre), j'utilise git exclusivement depuis le Terminal, car je trouve les intégrations de gits des IDE comme étant assez limitantes, et c'est un niveau d'abstraction que je ne trouve pas souhaitable personnellement.</p>
+
+  <h3> ffmpeg</h3>
+    <p> <a class="pf-link" href="https://ffmpeg.org/" target="_blank"> Ffmpeg</a> est l'outil derrière chaque éditeur et convertiseur d'image et vidéo sur Terre. C'est un simple ensemble de commandes qui peuvent convertir presque n'importe quel format d'image/vidéo, et effectuer des opérations comme le changement de taille et de qualité. Je l'utilise de plus en plus car il est installé sur presque chaque distribution Linux, et je trouve son utilisation très simple (par exemple, la commande <b>ffmpeg -i video.mp4 audio.mp3</b> crée un nouveau fichier nommé "audio.mp3", contenant l'audio du fichier "video.mp4", au format mp3)</p>
+
+<h2> Credits where it's due : </h2>
+  <p> Une part importante de mon environnement provient des scripts d'installation de <a class="pf-link" href="https://github.com/JaKooLit" target="_blank">Jakoolit</a>, qui fait un travail formidable en tant que membre de la communauté Desktop Linux. Si Linux vous intéresse, je ne peux que vous conseiller sa communauté ainsi que ses nombreux scripts d'installations.</p>

@@ -22,6 +22,7 @@ import { ArticlesTypesOfTheoriesComponent } from './features/articles/articles/t
 import { ArticlesRomanticizingSocieties } from './features/articles/articles/romanticizing-societies/romanticizing-societies.component';
 import { ArticlesLimitationsInFiction } from './features/articles/articles/limitations-in-ficiton/limitations-in-ficiton.component';
 import { ArticlesSchoolAndCreativity } from './features/articles/articles/school-and-creativity/school-and-creativity.component';
+import { ProjectsVirtualEnv } from './features/portfolio/projects/virtual-env/virtual-env.component';
 
 export const routes: Routes = [
 
@@ -54,6 +55,7 @@ export const routes: Routes = [
         { path: 'SaeS3', component: ProjectsSaeS3Component },
         { path: 'NDI2024', component: ProjectsNdi2024Component },
         { path: 'Stage2025', component: ProjectsStage2025Component },
+        { path: 'EnvironnementVirtuel', component: ProjectsVirtualEnv },
 
       ]},
 
