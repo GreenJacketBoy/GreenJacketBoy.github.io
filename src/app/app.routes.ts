@@ -24,6 +24,7 @@ import { ArticlesLimitationsInFiction } from './features/articles/articles/limit
 import { ArticlesSchoolAndCreativity } from './features/articles/articles/school-and-creativity/school-and-creativity.component';
 import { ProjectsVirtualEnv } from './features/portfolio/projects/virtual-env/virtual-env.component';
 import { ProjectsSciFiNovel } from './features/portfolio/projects/sci-fi-novel/sci-fi-novel.component';
+import { InfoContact } from './features/portfolio/info/contact/contact.component';
 
 export const routes: Routes = [
 
@@ -64,6 +65,7 @@ export const routes: Routes = [
       { path: 'Info', component: InfoComponent, children: [
 
         { path: 'SAE', component: InfoSaeComponent },
+        { path: 'Contact', component: InfoContact },
         
       ]},
     ]
