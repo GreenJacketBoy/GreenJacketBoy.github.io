@@ -26,6 +26,7 @@ import { ProjectsVirtualEnv } from './features/portfolio/projects/virtual-env/vi
 import { ProjectsSciFiNovel } from './features/portfolio/projects/sci-fi-novel/sci-fi-novel.component';
 import { InfoContact } from './features/portfolio/info/contact/contact.component';
 import { InfoApprentissage } from './features/portfolio/info/apprentissage/apprentissage.component';
+import { ProjectsSheikahSlateWeb } from './features/portfolio/projects/sheikah-slate-web/sheikah-slate-web.component';
 
 export const routes: Routes = [
 
@@ -60,6 +61,7 @@ export const routes: Routes = [
         { path: 'Stage2025', component: ProjectsStage2025Component },
         { path: 'EnvironnementVirtuel', component: ProjectsVirtualEnv },
         { path: 'RomanScienceFiction', component: ProjectsSciFiNovel },
+        { path: 'SheikahSlateWeb', component: ProjectsSheikahSlateWeb },
 
       ]},
 
