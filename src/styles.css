@@ -42,6 +42,7 @@
 html {
     position: relative;
     min-height: 100vh;
+    overscroll-behavior-y: none;
 }
 
 body {
