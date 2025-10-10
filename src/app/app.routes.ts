@@ -27,6 +27,7 @@ import { ProjectsSciFiNovel } from './features/portfolio/projects/sci-fi-novel/s
 import { InfoContact } from './features/portfolio/info/contact/contact.component';
 import { InfoApprentissage } from './features/portfolio/info/apprentissage/apprentissage.component';
 import { ProjectsSheikahSlateWeb } from './features/portfolio/projects/sheikah-slate-web/sheikah-slate-web.component';
+import { DopeAsFuckComponent } from './features/articles/articles/dope-as-fuck/dope-as-fuck.component';
 
 export const routes: Routes = [
 
@@ -86,6 +87,7 @@ export const routes: Routes = [
       { path: 'Fiction_And_Romanticizing_Societies', component: ArticlesRomanticizingSocieties },
       { path: 'Limitations_In_Fiction', component: ArticlesLimitationsInFiction },    
       { path: 'School_And_Creativity', component: ArticlesSchoolAndCreativity },
+      { path: 'Dope_As_Fuck', component: DopeAsFuckComponent },
       
     ]
   },
