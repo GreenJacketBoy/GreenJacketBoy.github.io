@@ -41,6 +41,12 @@ export class QuoteService {
     '"Technical debt ? I\'m not technical."', // https://youtu.be/JeNS1ZNHQs8?&t=95
     '"This is the craziest Todo list app I\'ve ever built."', // https://youtu.be/JeNS1ZNHQs8?&t=233
     '"Private key ? The one I put on my github ?"', // https://youtu.be/JeNS1ZNHQs8?&t=281
+    '"Now our backend is five-line Go function running on AWS lambda. Somehow we\'re paying more!"', // https://youtu.be/rXPpkzdS-q4?t=29
+    '"Cloud is only means to an end. End goal is for cloud vendors to get rich."', // https://youtu.be/rXPpkzdS-q4?t=95
+    '"Quick hot fix in Cloud CLI, and then server starts burning."', // https://youtu.be/rXPpkzdS-q4?t=168
+    '"I memorized the entire metro map last night, so don\'t embarass me by looking lost."', // https://youtu.be/JsB80oxyUYg?t=194
+    '"I said dress for any occasion OK ? When I told you to take the ski leggings, you said "I am not mentally ill"."', // https://youtu.be/JsB80oxyUYg?t=211
+    '"We\'re going up the mountain to the 2nd biggest military base. Why is it interesting ? I don\'t know that\'s why we\'re going."', // https://youtu.be/JsB80oxyUYg?t=194
   ];
 
   constructor() { }
