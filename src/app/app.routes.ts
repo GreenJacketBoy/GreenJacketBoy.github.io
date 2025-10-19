@@ -28,6 +28,7 @@ import { InfoContact } from './features/portfolio/info/contact/contact.component
 import { InfoApprentissage } from './features/portfolio/info/apprentissage/apprentissage.component';
 import { ProjectsSheikahSlateWeb } from './features/portfolio/projects/sheikah-slate-web/sheikah-slate-web.component';
 import { DopeAsFuckComponent } from './features/articles/articles/dope-as-fuck/dope-as-fuck.component';
+import { ProjectsSpaceshipCrew } from './features/portfolio/projects/spaceship-crew/spaceship-crew.component';
 
 export const routes: Routes = [
 
@@ -63,6 +64,7 @@ export const routes: Routes = [
         { path: 'EnvironnementVirtuel', component: ProjectsVirtualEnv },
         { path: 'RomanScienceFiction', component: ProjectsSciFiNovel },
         { path: 'SheikahSlateWeb', component: ProjectsSheikahSlateWeb },
+        { path: 'SpaceshipCrew', component: ProjectsSpaceshipCrew },
 
       ]},
 
