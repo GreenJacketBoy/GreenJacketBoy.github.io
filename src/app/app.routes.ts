@@ -29,6 +29,7 @@ import { InfoApprentissage } from './features/portfolio/info/apprentissage/appre
 import { ProjectsSheikahSlateWeb } from './features/portfolio/projects/sheikah-slate-web/sheikah-slate-web.component';
 import { DopeAsFuckComponent } from './features/articles/articles/dope-as-fuck/dope-as-fuck.component';
 import { ProjectsSpaceshipCrew } from './features/portfolio/projects/spaceship-crew/spaceship-crew.component';
+import { BeenLearningCComponent } from './features/articles/articles/been-learning-c/been-learning-c.component';
 
 export const routes: Routes = [
 
@@ -90,6 +91,7 @@ export const routes: Routes = [
       { path: 'Limitations_In_Fiction', component: ArticlesLimitationsInFiction },    
       { path: 'School_And_Creativity', component: ArticlesSchoolAndCreativity },
       { path: 'Dope_As_Fuck', component: DopeAsFuckComponent },
+      { path: 'Been_Learning_C', component: BeenLearningCComponent },
       
     ]
   },

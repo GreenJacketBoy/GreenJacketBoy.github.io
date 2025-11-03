@@ -1,0 +1,56 @@
+
+<h1> So I've been learning C</h1>
+
+  <p> So I've been learning the C programming language for a few weeks now, and I'd like to share my experience. But first, let me explain why I wanted to learn this language.</p>
+
+  <p> I first wanted to learn Rust, because I think it's a really cool and unique language. However I don't have unlimited time to do everything, and so I try to find a balance with the things that interest me and want to learn, and the things that can help me get a job. Now as of november 2025, Rust isn't really that popular when you compare it to languages with which it's competing like C and C++, and even less when you compare it to every other languages it could realistically replace.</p>
+
+  <p> I wanted to learn a low level language because I didn't really know anything low level, as I had mostly worked with Java and web languages during the last 2 years of my CS degree. I also got a good understanding of basic system architecture regarding the stack and the heap and felt like I would not be completely lost with languages that require you to have this sort of knowledge.</p>
+
+  <p> So I decided I would learn C, because it's widely used and comes with the added benefit of making it easier to learn C++ down the line.</p>
+
+  <p> I had an idea for what would have originally been the Rust project, a basic terminal application that aims to emulates a spaceship crew, it seemed compatible and pretty simple, so I went with that, more info over here : <a href="https://greenjacketboy.github.io/Portfolio/Projects/SpaceshipCrew" target="_blank">greenjacketboy.github.io/Portfolio/Projects/SpaceshipCrew</a></p>
+
+<h2> Immediate observations :</h2>
+
+  <p> Strings. They're widely widely used for all sort of purposes : Store a name, a title, a description, an identifier, or even use them as enums like Typescript does. Most OOP languages have a special object for it, coming with a bunch of function to make it easier to work with. C is not an OOP language, but it is kind of in the middle between treating strings as an important part of the language, and just leaving them as an array of chars.</p>
+
+  <p> For example, there is no 'string' type in C. But there is a 'char' type, and you can create fixed size arrays of a specific type, so that's a string for you ! But instead of having to use <b>char myString[] = {{'{'}}'h', 'e', 'l', 'l', 'o'{{'}'}};</b>, you can simply use <b>char myString[] = "hello";</b></p>
+
+  <p> However something that I didn't understand at the beginning was that I couldn't have an argument having the type array of char, instead it had to be a memory address to a char, because second observation : </p>
+
+<h2> C Arrays are a social construct</h2>
+
+  <p> They exist in our minds, it's an abstraction for our human brains to work more easily. But arrays don't really exist, they are memory space of the size of the array type multiplied by the amount of elements it holds.</p>
+
+  <p> When you decalre an array like that : <b>int myArray[5];</b>, you might think that this is an array of type int, that can contain a maximum of 5 elements. You would be right. HOWEVER, this variable is now a pointer which points to a memory address holding a single int. WTF (<i>you might think</i>)? Where are my other integers (<i>you might ask</i>)? I can still assign them by doing <b>myArray[3] = 64;</b>, so that means it's an array, right ?</p>
+
+  <p> WRONG ! Do you know what <b>myArray[3]</b> does under the hood ? it does that : <b>*(myArray + 3)</b>. Which basically (without entering into any details) takes the memory address of the first element, adds 3 to it, and gives you the content of the memory adress, so that you can read or write to it.</p>
+
+<h2> Return values and errors</h2>
+
+  <p> Every language I've ever used has a native support for error handling, most often with a keyword like <b>throw</b>, and a <b>try-catch block</b> to handle these errors. There's no such thing in C. What you will see instead, is a function that wouldn't return anything in any other language, returning an int, where 0 indicates a successful execution, and any other number is an error code, which can then be handled as if it was an error being thrown.</p>
+
+  <p> Honestly that's pretty simple, and it's not that different than... Sorry what ? Oh you want your function to return something useful ? But why ? You can just pass a pointer to the variable your want returned. What you're not satisfied enough ? Uuuugh fine. Lucky for you, there are actually a lot of function from the standard library that manage to signal something going wrong while still returning something.</p>
+
+  <p> The most complicated way I've seen of it beeing done was when using the strol() function, which converts a string to a long. You can know exactly what went wrong with a combination of the return value, the second argument compared to the first one, and errno, which is a special variable from the errno.h lib, which value will be changed once the function is ran.</p>
+
+  <p> For a simpler way of doing it (not to say that the previous could have been simpler, it couldn't) the malloc() function, used to allocated Heap memory simply returns a pointer to the allocated memory on success, and NULL on faillure. BUT WAIT BECAUSE NULL IS</p>
+
+<h2> Macros</h2>
+
+  <p> There's not a 'NULL' type, just like there's not a 'bool' type. These are macros defined in the libraries, that will simply be replaced by their actual values when you compile your program. No variables taking space on the memory, just the compiler doing a copy and replace of whatever you've set it to be.</p>
+
+  <p> You can also define a block of code that does basically the same thing as a function, but without it being a function call, so you retain the advantages of more concise code with less repetition, without the abstraction cost associated with a function call.</p>
+
+<h2> Casts</h2>
+
+  <p> So casts are also a social construct. In any other language, you would expect a cast to do some converting work under the hood, but that's not the case in C. when you cast an char to an int, the bits contained in the memory address of the variable are not changed in any way. It's only a matter of how the compiler chooses to interpret the data. For example, if you print the integer 97 as a char, everything is fine and you get 'a', and you can print 'a' + 2 as an integer to get 99, or as a char to get 'c'.</p>
+
+<h2> Goto</h2>
+
+  <p> I love gotos. That's it, I've said it, count me in this decades old programming civil war, they're the best thing ever and I feel robbed that all the languages I've used until there don't have them. You want to skip a portion of code ? I mean you could use an if statement but it adds indentation and makes the code less readable. Or you could just jump over it with a goto, no indentation needed and you even have the goto name to tell you why and to where you're jumping, which also makes it a very good fit for error handling.</p>
+
+<h2> But anyways,</h2>
+
+  <p> These were my first impressions of the language after doing high level OOP for 2 years, maybe it'll make a few people remember how it was learning C, or discover what it feels to be thrown into this language after growing up surrounded by high level OOP.</p>
