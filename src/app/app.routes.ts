@@ -30,6 +30,7 @@ import { ProjectsSheikahSlateWeb } from './features/portfolio/projects/sheikah-s
 import { DopeAsFuckComponent } from './features/articles/articles/dope-as-fuck/dope-as-fuck.component';
 import { ProjectsSpaceshipCrew } from './features/portfolio/projects/spaceship-crew/spaceship-crew.component';
 import { BeenLearningCComponent } from './features/articles/articles/been-learning-c/been-learning-c.component';
+import { ProjectsGameCriticsComponent } from './features/portfolio/projects/game-critics/game-gritics.component';
 
 export const routes: Routes = [
 
@@ -66,6 +67,7 @@ export const routes: Routes = [
         { path: 'RomanScienceFiction', component: ProjectsSciFiNovel },
         { path: 'SheikahSlateWeb', component: ProjectsSheikahSlateWeb },
         { path: 'SpaceshipCrew', component: ProjectsSpaceshipCrew },
+        { path: 'GameCritics', component: ProjectsGameCriticsComponent },
 
       ]},
 
