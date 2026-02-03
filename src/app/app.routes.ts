@@ -31,6 +31,7 @@ import { DopeAsFuckComponent } from './features/articles/articles/dope-as-fuck/d
 import { ProjectsSpaceshipCrew } from './features/portfolio/projects/spaceship-crew/spaceship-crew.component';
 import { BeenLearningCComponent } from './features/articles/articles/been-learning-c/been-learning-c.component';
 import { ProjectsGameCriticsComponent } from './features/portfolio/projects/game-critics/game-gritics.component';
+import { ArticlesExponentialGrowthComponent } from './features/articles/articles/exponential-growth/exponential-growth.component';
 
 export const routes: Routes = [
 
@@ -94,6 +95,7 @@ export const routes: Routes = [
       { path: 'School_And_Creativity', component: ArticlesSchoolAndCreativity },
       { path: 'Dope_As_Fuck', component: DopeAsFuckComponent },
       { path: 'Been_Learning_C', component: BeenLearningCComponent },
+      { path: 'Exponential_Growth_In_Video_Games', component: ArticlesExponentialGrowthComponent },
       
     ]
   },
