@@ -1,11 +1,7 @@
 ---
-import HtmlPage from "../components/HtmlPage.astro"
 import Footer from "../components/Footer.astro"
-
-const { title } = Astro.props;
 ---
 
-<HtmlPage title={ title }>
   <main>
   <!-- used this really cool font for the image : https://www.fontspace.com/unione-force-stencil-font-f59800 -->
     <a href="/" class="home-page-image"><img id="home-image" src="/assets/images/home_page.webp" width="600" height="108" alt="Home Page"></a>
@@ -15,7 +11,6 @@ const { title } = Astro.props;
   </main>
   <space-between></space-between>
   <Footer style="home"/>
-</HtmlPage>
 
 <!-- STYLE -->
 

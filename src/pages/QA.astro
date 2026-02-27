@@ -1,10 +1,12 @@
-<body>
-  <main>
-    <div class="main-content concrete">
-      <!-- used this really cool font for the image : https://www.fontspace.com/unione-force-stencil-font-f59800 -->
-        <a routerLink="" class="home-page-image"><img id="home-image" ngSrc="assets/images/home_page.webp" width="600" height="108" alt="Home Page" priority></a>
+---
+import HtmlPage from "../components/HtmlPage.astro"
+import HomeLayout from "../components/HomeLayout.astro"
+---
 
-        <h1>Questions and Answers :</h1>
+<HtmlPage title="Home">
+  <HomeLayout>
+
+        <h1 class="title">Questions and Answers :</h1>
 
         <hr>
 
@@ -67,7 +69,33 @@
           <p><span>A :&nbsp;</span> I'm ... strugling to understand why this matters so much, but if you want, the Home Page image at the top redirects you to the Home Page. </p>
         </div>
 
-      </div>
-  </main>
-  <custom-footer [style]="'home'"></custom-footer>
-</body>
+  </HomeLayout>
+</HtmlPage>
+
+<style >
+
+  .title {
+    color: white;
+  }
+
+  .qa-item {
+    margin-left: 25px;
+    margin-bottom: 25px;
+  }
+
+  .qa-item p {
+    margin: 0;
+  }
+
+  .qa-item p:first-child {
+    font-weight: bold;
+    text-decoration: underline solid white 2px;
+  }
+
+  .qa-item p span {
+    color: #ffe600;
+    font-weight: bold;
+    display: inline-block; /* this line separates the text-decoration styling of the <span>, from the <p> containing it*/
+  }
+
+</style>
