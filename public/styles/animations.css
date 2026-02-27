@@ -1,0 +1,17 @@
+@keyframes small-text-hover-animation {
+    from {
+        color: #1f5300;
+    }
+    to {
+        color: #266900;
+    }
+}
+
+@keyframes small-text-animation {
+    from {
+        color: #56e000;
+    }
+    to {
+        color: #62ff00;
+    }
+}

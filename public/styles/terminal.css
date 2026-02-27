@@ -1,0 +1,11 @@
+@import url("/styles/animations.css");
+@import url("/styles/variables.css");
+
+/* Le texte qui se trouve dans un terminal statique (exemple : "cat AboutMe.md" dans le portfolio) */
+.section-terminal {
+    animation: small-text-animation 2s alternate infinite;
+    background-image: var(--fallout-terminal);
+    border: var(--small-text-border-color) 7px groove;
+    margin-right: 10px;
+    margin-left: 10px;
+}

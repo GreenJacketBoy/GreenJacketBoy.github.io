@@ -1,0 +1,107 @@
+---
+import HtmlPage from "../components/HtmlPage.astro"
+import Footer from "../components/Footer.astro"
+
+const { title } = Astro.props;
+---
+
+<HtmlPage title={ title }>
+  <main>
+  <!-- used this really cool font for the image : https://www.fontspace.com/unione-force-stencil-font-f59800 -->
+    <a href="/" class="home-page-image"><img id="home-image" src="/assets/images/home_page.webp" width="600" height="108" alt="Home Page"></a>
+
+    <slot />
+
+  </main>
+  <space-between></space-between>
+  <Footer style="home"/>
+</HtmlPage>
+
+<!-- STYLE -->
+
+<style>
+  :root {
+    --home-border-color: #ecd11e;
+  }
+
+  body {
+    /* background: linear-gradient(20deg, rgb(194, 131, 96) , rgb(237, 189, 211), rgb(229, 178, 185), rgb(202, 164, 191), rgb(184, 146, 167), rgb(196, 146, 123)); */
+    /* background: linear-gradient(35deg, rgb(216, 191, 145), rgb(226, 206, 105), rgb(244, 230, 189), rgb(247, 242, 210), rgb(247, 251, 234), rgb(247, 242, 210), rgb(247, 228, 172), rgb(226, 206, 105), rgb(227, 203, 157)); */
+    /* background: linear-gradient(25deg, rgb(206, 181, 135), rgb(216, 196, 95), rgb(234, 220, 179), rgb(237, 232, 200), rgb(237, 241, 224), rgb(237, 232, 200), rgb(237, 218, 162), rgb(216, 196, 95), rgb(217, 193, 147)); */
+    background: linear-gradient(15deg, rgb(196, 171, 125), rgb(206, 186, 85), rgb(224, 210, 169), rgb(227, 222, 190), rgb(227, 231, 214), rgb(227, 222, 190), rgb(227, 208, 152), rgb(206, 186, 85), rgb(207, 183, 137));
+
+
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  space-between-main-and-footer {
+    flex: 1;
+  }
+
+  main {
+    font-size: large;
+    max-width: 1075px;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+
+    border-left: 3px groove var(--home-border-color);
+    border-right: 3px groove var(--home-border-color);
+    border-bottom: 3px groove var(--home-border-color);
+
+    /* concrete image background comes from here : https://blog.spoongraphics.co.uk/freebies/10-free-seamless-subtle-grunge-concrete-textures */
+    background-image: url("/assets/images/concrete.webp");
+    color: rgb(250, 250, 250);
+  }
+
+  main :global(p) {
+    font-size: 1.2rem;
+  }
+
+  main :global(h1), main :global(hr), main :global(a) {
+    color: #ffe600;
+    transition: color 0.005s;
+  }
+
+  main :global(a:hover) {
+    color: #ffd500;
+  }
+
+  main :global(hr) {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  main :global(.home-page-image) {
+    cursor: pointer;
+  }
+
+  main :global(#home-image) {
+    transition: all 250ms ease-in-out;
+    padding-inline: .5em;
+    border-radius: 13px;
+  }
+
+  main :global(#home-image:hover) {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1px);
+    transition: all 250ms ease-in-out;
+  }
+
+  /* RESPONSIVE HERE */
+
+  /* why 646 pixels ?
+      - 600 : width of the image
+      - 20 * 2 : padding
+      - 3 * 2 : width of the border
+  */
+  @media screen and (max-width: 646px) {
+    :global(#home-image) {
+      width: 100%;
+      height:auto;
+    }
+  }
+</style>

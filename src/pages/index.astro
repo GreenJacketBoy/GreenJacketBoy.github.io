@@ -1,16 +1,66 @@
 ---
-
+import HtmlPage from "../components/HtmlPage.astro"
+import HomeLayout from "../components/HomeLayout.astro"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="/assets/images/favicon.png" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<HtmlPage title="Home">
+  <HomeLayout>
+
+    <hr>
+
+      <p>Oh hi ! Welcome to the home page of my website !</p>
+      <p>I did debate with myself for quite some time on whether this should be the "Home" or "Hub" page, which would functionally be the same, so I guess I can always change it later. </p>
+      <p>We really need to invent new words. </p>
+
+    <hr>
+
+      <p>Anyways, ... Oh right, my name ! My legal name is Yann, although I find it doesn't sound amazing in an english sentence, and my online name attached to my real life identity is Green Jacket Boy, or Green for short.</p>
+      <p>As an alternative you can call me Glenn, it's a good balance between my legal and online name, and it doesn't sound strange in an english sentence. I also happen to really like this name.</p>
+
+    <hr>
+
+    <h1>Train Station :</h1>
+
+      <div class="train-station-element">
+        <h2><a href="/Portfolio">Portfolio</a></h2>
+        <p>Written in french (faq : <a href="QA#whats-up-with-all-the-languages">What's with  the languages ?</a>), it is a aimed at companies and recruiters, you can see it as my resume, but with a lot more content, details and personal touch.</p>
+      </div>
+
+      <div class="train-station-element">
+        <h2><a href="/Articles">Personal Blog</a></h2>
+        <p>A place for me to write articles about pretty much anything, including but not limited to Science, Technology, Programming and Video Games.</p>
+      </div>
+
+      <div class="train-station-element">
+        <h2><a href="/QA">Q&A</a></h2>
+        <p>Answers to questions you might (or most probably might not) have about me and this website.</p>
+      </div>
+
+    <hr>
+
+    <h1 id="Contact">Contact :</h1>
+
+      <p>If you wish to contact me, you can do so by sending me an email at <b>greenjacketboy&#64;proton.me</b>, or by writing me a message on <b><a href="https://www.linkedin.com/in/green-jacket/" target="_blank">Linkedin</a></b>.</p>
+      <p>It's worth noting that this is not <i>really</i> my professional email. Just like my phone number I would prefer not to have it publicly on the internet. Of course it doesn't mean that you can't contact me for professional reasons through this email. </p>
+  </HomeLayout>
+</HtmlPage>
+
+<!-- STYLE -->
+
+<style>
+
+  img {
+    display: none;
+  }
+
+  .train-station-element{
+    margin-left: 25px;
+  }
+
+  .train-station-element h2 {
+    margin-bottom: 0;
+  }
+  .train-station-element p {
+    margin-top: 0;
+  }
+</style>
