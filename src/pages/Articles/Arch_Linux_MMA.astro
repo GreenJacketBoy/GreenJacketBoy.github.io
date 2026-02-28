@@ -1,3 +1,7 @@
+---
+import ArticlesLayout from "../../components/ArticlesLayout.astro"
+---
+<ArticlesLayout>
 
 <h1> Mixed Martial Arts and Arch Linux : The best comes from adaptability </h1>
 
@@ -48,8 +52,14 @@
 
   <p> It's very common to see Arch Linux systems that look absolutely nothing like Windows or MacOS. I mean ... just look at that : </p>
 
-    <img class="article-image" ngSrc="assets/images/ExampleWorkspace.webp" alt="Example Workspace" width="1920" height="1200" priority>
-    <a href="https://www.reddit.com/r/unixporn/comments/1j41mqn/hyprland_fighting_against_my_school_to_stay_on/"> Credit to Mikyu__ on Reddit </a>
+  <figure>
+    <img src="/assets/images/ExampleWorkspace.webp" alt="Example Workspace" width="1920" height="1200">
+    <figcaption>
+      Credit to 
+      <a href="https://www.reddit.com/r/unixporn/comments/1j41mqn/hyprland_fighting_against_my_school_to_stay_on/"> Mikyu__</a>
+      on Reddit 
+    </figcaption>
+  </figure>
 
   <p> Of course it's possible to get something similar on other distributions, even Ubuntu, but it's generally going to be harder, and discouraged. </p>
 
@@ -60,3 +70,5 @@
 <h2> Conclusion : </h2>
 
   <p> This made me realize that, in many contexts, the best option is generally the one that offer the most adaptability. Adaptability to the user, and adaptability to the different situations that might be encountered. </p>
+
+</ArticlesLayout>

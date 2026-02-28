@@ -1,3 +1,7 @@
+---
+import ArticlesLayout from "../../components/ArticlesLayout.astro"
+---
+<ArticlesLayout>
 
 <h1> So I've been learning C</h1>
 
@@ -9,13 +13,13 @@
 
   <p> So I decided I would learn C, because it's widely used and comes with the added benefit of making it easier to learn C++ down the line.</p>
 
-  <p> I had an idea for what would have originally been the Rust project, a basic terminal application that aims to emulates a spaceship crew, it seemed compatible and pretty simple, so I went with that, more info over here : <a href="https://greenjacketboy.github.io/Portfolio/Projects/SpaceshipCrew" target="_blank">greenjacketboy.github.io/Portfolio/Projects/SpaceshipCrew</a></p>
+  <p> I had an idea for what would have originally been the Rust project, a basic terminal application that aims to emulates a spaceship crew, it seemed compatible and pretty simple, so I went with that, more info over here : <a href="/Portfolio/Projects/SpaceshipCrew" target="_blank">greenjacketboy.github.io/Portfolio/Projects/SpaceshipCrew</a></p>
 
 <h2> Immediate observations :</h2>
 
   <p> Strings. They're widely widely used for all sort of purposes : Store a name, a title, a description, an identifier, or even use them as enums like Typescript does. Most OOP languages have a special object for it, coming with a bunch of function to make it easier to work with. C is not an OOP language, but it is kind of in the middle between treating strings as an important part of the language, and just leaving them as an array of chars.</p>
 
-  <p> For example, there is no 'string' type in C. But there is a 'char' type, and you can create fixed size arrays of a specific type, so that's a string for you ! But instead of having to use <b>char myString[] = {{'{'}}'h', 'e', 'l', 'l', 'o'{{'}'}};</b>, you can simply use <b>char myString[] = "hello";</b></p>
+  <p> For example, there is no 'string' type in C. But there is a 'char' type, and you can create fixed size arrays of a specific type, so that's a string for you ! But instead of having to use <b>char myString[] = {'{'}'h', 'e', 'l', 'l', 'o'{'}'};</b>, you can simply use <b>char myString[] = "hello";</b></p>
 
   <p> However something that I didn't understand at the beginning was that I couldn't have an argument having the type array of char, instead it had to be a memory address to a char, because second observation : </p>
 
@@ -54,3 +58,5 @@
 <h2> But anyways,</h2>
 
   <p> These were my first impressions of the language after doing high level OOP for 2 years, maybe it'll make a few people remember how it was learning C, or discover what it feels to be thrown into this language after growing up surrounded by high level OOP.</p>
+
+</ArticlesLayout>

@@ -21,6 +21,7 @@ import HtmlPage from "../components/HtmlPage.astro"
 
   :root {
       --articles-border-color: #154fa1;
+      --figcaption-color: #a8a8a8;
   }
 
   body {
@@ -101,6 +102,15 @@ import HtmlPage from "../components/HtmlPage.astro"
 
   #articles-image:hover {
     filter: brightness(1.5);
+  }
+
+  figure img {
+    width: 100%;
+    height: auto;
+  }
+
+  figcaption {
+    color: var(--figcaption-color);
   }
 
   /* RESPONSIVE HERE */
