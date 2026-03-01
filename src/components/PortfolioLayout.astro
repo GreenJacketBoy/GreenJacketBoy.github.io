@@ -5,13 +5,29 @@ import HtmlPage from "../components/HtmlPage.astro"
 <HtmlPage title="Portfolio">
     <main>
 
-        <!-- <button class="menu-toggle-button" (click)="toggleMenu()"><<<< display menu</button> -->
+        <button class="toggle-nav show">&lt;&lt;&lt;&lt; display menu</button>
+        <button class="toggle-nav">hide menu &gt;&gt;&gt;&gt;</button>
+
+        <script>
+            const [show, hide] = document.getElementsByClassName("toggle-nav");
+            show.addEventListener("click", () => {
+                document.getElementById("nav")?.classList.add("show");
+                show.classList.remove("show");
+                hide.classList.add("show");
+            });
+
+            hide.addEventListener("click", () => {
+                document.getElementById("nav")?.classList.remove("show");
+                hide.classList.remove("show");
+                show.classList.add("show");
+            });
+        </script>
 
         <article>
             <slot />
         </article>
 
-        <nav>
+        <nav id="nav">
             <img src="/assets/images/picture_close.webp" width="1020" height="930" alt="Picture of me" id="picofme">
             <ul>
                 <li class="static">Prenom : Yann</li>
@@ -144,7 +160,17 @@ import HtmlPage from "../components/HtmlPage.astro"
         color: rgba(0, 0, 0, 0);
     }
 
-    .menu-toggle-button {
+    article a {
+        animation: small-text-animation 2s alternate infinite;
+    }
+
+    article img {
+        width: 95%;
+        height: auto;
+    }
+
+    /* WARNING ! ugly responsive stuff here */
+    .toggle-nav {
 
         display: none;
         position: fixed;
@@ -160,27 +186,16 @@ import HtmlPage from "../components/HtmlPage.astro"
         margin-left: 10px;
     }
 
-    article a {
-        animation: small-text-animation 2s alternate infinite;
-    }
-
-    article img {
-        width: 95%;
-        height: auto;
-    }
-
-    /* WARNING ! ugly responsive stuff here */
-
     @media screen and (max-width: 935px) {
 
-        .image-and-text {
+        nav {
             display: none;
         }
-        .image-and-text.displayed {
+        nav.show {
             display: initial;
         }
 
-        .menu-toggle-button {
+        .toggle-nav.show {
             display: initial;
         }
     }
