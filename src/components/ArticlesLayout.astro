@@ -1,13 +1,19 @@
 ---
 import Footer from "../components/Footer.astro"
 import HtmlPage from "../components/HtmlPage.astro"
+
+interface Props {
+  buttonRedirectsToHome?: boolean;
+}
+
+const {buttonRedirectsToHome = false} = Astro.props;
 ---
 <HtmlPage title="Articles">
 
   <main>
 
     <!-- used this font for the image : https://www.fontspace.com/anderlecht-font-f126580 -->
-    <a href="/Articles" class="articles-image"><img id="articles-image" src="/assets/images/articles.webp" width="397" height="81" alt="Articles Page"></a>
+    <a href={buttonRedirectsToHome ? "/" : "/Articles"} class="articles-image"><img id="articles-image" src="/assets/images/articles.webp" width="397" height="81" alt="Articles Page"></a>
   
     <hr>
     <article>
