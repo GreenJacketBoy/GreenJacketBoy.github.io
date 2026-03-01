@@ -1,10 +1,14 @@
+---
+import PortfolioLayout from "../../../components/PortfolioLayout.astro"
+---
+<PortfolioLayout>
 
 <div class="section-terminal"><h3>~/$ cat Spaceship_crew.md</h3></div>
 
 <h1> VAISSEAU SPATIAL !</h1>
 
     <p>
-        Ce projet suit un peu la même logique que celui de la <a class="pf-link" routerLink="/Portfolio/Projects/SheikahSlateWeb">Sheikah Slate Web</a>,
+        Ce projet suit un peu la même logique que celui de la <a href="/Portfolio/Projects/SheikahSlateWeb">Sheikah Slate Web</a>,
         c'est à dire : 
     </p>
 
@@ -40,7 +44,7 @@
     </p>
 
     <p>
-        Il possède actuellement les commandes suivantes (légèrement inspiré du <a class="pf-link" href="https://fr.wikipedia.org/wiki/Shell_Unix" target="_blank">Shell UNIX</a> pour la syntaxe) :
+        Il possède actuellement les commandes suivantes (légèrement inspiré du <a href="https://fr.wikipedia.org/wiki/Shell_Unix" target="_blank">Shell UNIX</a> pour la syntaxe) :
     </p>
 
     <ul>
@@ -62,9 +66,9 @@
     </ul>
 
     <h3>Quelques exemples</h3>
-    <img class="pf-image" ngSrc="assets/images/crew-ls.webp" width="856" height="493" alt="Crew Ls Command" priority>
-    <img class="pf-image" ngSrc="assets/images/room-ls.webp" width="932" height="493" alt="Room Ls Command" priority>
-    <img class="pf-image" ngSrc="assets/images/room-add.webp" width="753" height="399" alt="Room Add Command" priority>
+    <img src="/assets/images/crew-ls.webp" width="856" height="493" alt="Crew Ls Command">
+    <img src="/assets/images/room-ls.webp" width="932" height="493" alt="Room Ls Command">
+    <img src="/assets/images/room-add.webp" width="753" height="399" alt="Room Add Command">
 
 <hr>
 
@@ -81,5 +85,7 @@
 
     <p> 
         Si vous avez lu jusqu'ici et souhaitez voir comment tout ça fonctionne : 
-        <a class="pf-link" href="https://github.com/GreenJacketBoy/Spaceship_Crew_Simulator" target="_blank">https://github.com/GreenJacketBoy/Spaceship_Crew_Simulator</a>
+        <a href="https://github.com/GreenJacketBoy/Spaceship_Crew_Simulator" target="_blank">https://github.com/GreenJacketBoy/Spaceship_Crew_Simulator</a>
     </p>
+
+</PortfolioLayout>

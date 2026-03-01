@@ -1,9 +1,13 @@
+---
+import PortfolioLayout from "../../../components/PortfolioLayout.astro"
+---
+<PortfolioLayout>
 
 <div class="section-terminal"><h3>~/$ cat SAE_S3.md</h3></div>
 
 <h1>Le site de poursuite d'études</h1>
 
-  <p>La <a class="pf-link" routerLink="/Portfolio/Info/SAE">SAE</a> du troisième semestre (ou premier semestre de la deuxième année) était le projet de la plus grande envergure jusque-là, en équipe de 5, et étant de loin le plus proche d'un réel projet Informatique. Nous avions 4 mois pour réaliser un site web de gestion de poursuite d'études, sans base de code et sans réelle directive au départ.</p>
+  <p>La <a href="/Portfolio/Info/SAE">SAE</a> du troisième semestre (ou premier semestre de la deuxième année) était le projet de la plus grande envergure jusque-là, en équipe de 5, et étant de loin le plus proche d'un réel projet Informatique. Nous avions 4 mois pour réaliser un site web de gestion de poursuite d'études, sans base de code et sans réelle directive au départ.</p>
   <p>Toute information venait d'un professeur jouant le rôle de notre client, à qui le Product Owner (membre du groupe qui communique avec le client) désigné de notre équipe devait poser toutes les questions qui pouvaient être utiles pour faire avancer le projet dans la direction souhaité par le client.</p>
 
 <hr>
@@ -16,9 +20,9 @@
 
   <p>Au début, 3 types d'utilisateurs allaient pouvoir interagir de différentes manières avec le site :</p>
 
-<ul class="liste-a-puce">
+<ul>
   <li>les Responsables de poursuite d'étude
-    <ul class="sous-liste-a-puce">
+    <ul>
       <li>Créer des agrégations</li>
       <li>Remplir les avis de poursuite d'étude</li>
       <li>Consulter les notes agrégées de tous les étudiants</li>
@@ -43,22 +47,22 @@
 
 <hr>
   
-  <img class="pf-image" ngSrc="assets/images/saes3_1.webp" width="1920" height="903" alt="liste d'étudiant" priority>
+  <img src="/assets/images/saes3_1.webp" width="1920" height="903" alt="liste d'étudiant">
 
 <hr>
 
-  <img class="pf-image" ngSrc="assets/images/saes3_2.webp" width="1920" height="903" alt="liste d'agrégations" priority>
+  <img src="/assets/images/saes3_2.webp" width="1920" height="903" alt="liste d'agrégations">
 
 <hr>
 
   <p><strong>Technologies utilisées pour ce projet :</strong></p>
 
   <ul class="liste-a-puce">
-    <li><a class="pf-link" routerLink="/Portfolio/Skills/Web" fragment="HTML-CSS">HTML</a></li>
-    <li><a class="pf-link" routerLink="/Portfolio/Skills/Web" fragment="HTML-CSS">CSS</a></li>
-    <li><a class="pf-link" routerLink="/Portfolio/Skills/Web" fragment="PHP">PHP</a></li>
+    <li><a href="/Portfolio/Skills/Web#HTML-CSS">HTML</a></li>
+    <li><a href="/Portfolio/Skills/Web#HTML-CSS">CSS</a></li>
+    <li><a href="/Portfolio/Skills/Web#PHP">PHP</a></li>
     <li>GIT</li>
-    <li><a class="pf-link" routerLink="/Portfolio/Skills/SQL">MySQL</a></li>
+    <li><a href="/Portfolio/Skills/SQL">MySQL</a></li>
     <li>Docker</li>
   </ul>
 
@@ -66,3 +70,5 @@
 
   <p>Ce projet a demandé beaucoup d'investissement, en particulier car nous utilisions beaucoup de technologies et de méthodes de travail dont nous n'avions pas l'habitude, et que nous apprenions en même temps que nous faisions le projet.</p>
   <p>Dans l'ensemble, ce fut une très bonne expérience, car j'ai principalement travaillé avec des personnes que je ne connaissais pas, même avec les aléas qui arrivent avec les projets de développement à côté des cours.</p>
+
+</PortfolioLayout>

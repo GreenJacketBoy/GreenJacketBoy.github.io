@@ -19,9 +19,11 @@ import HtmlPage from "../components/HtmlPage.astro"
                 <li> <a href="/"><arrow-sel>&gt; </arrow-sel>Page d'accueil</a></li>
                 <li> <a href="/Portfolio/AboutMe"><arrow-sel>&gt; </arrow-sel>About me</a></li>
                 <li> <a href="/Portfolio/Info/Contact"><arrow-sel>&gt; </arrow-sel>Contact</a></li>
+            {/*
             <!-- Because I value graduating, but f*ck this
                 <li class="dynamic" (click)="goTo('/Portfolio/Info/Apprentissage')"><span class="arrow">> </span>Portfolio d'apprentissage</li>
             -->
+*/}
 
                 <li class="static">- - - - - - - - - - - - - - - -</li>
                 <li class="static">Compétences : </li>
@@ -38,7 +40,6 @@ import HtmlPage from "../components/HtmlPage.astro"
                 <li> <a href="/Portfolio/Projects/SaeS3"><arrow-sel>&gt; </arrow-sel>SAE 3eme Semestre</a></li>
                 <li> <a href="/Portfolio/Projects/NDI2024"><arrow-sel>&gt; </arrow-sel>Nuit de l'Info</a></li>
                 <li> <a href="/Portfolio/Projects/SpaceshipCrew"><arrow-sel>&gt; </arrow-sel>Spaceship Crew (en C)</a></li>
-                <li> <a href="/Portfolio/Projects/GameCritics"><arrow-sel>&gt; </arrow-sel>Game-Critics</a></li>
                 <li> <a href="/Portfolio/Projects/EnvironnementVirtuel"><arrow-sel>&gt; </arrow-sel>Environnement Virtuel</a></li>
                 <li> <a href="/Portfolio/Projects/RomanScienceFiction"><arrow-sel>&gt; </arrow-sel>Roman de Science-Fiction</a></li>
             </ul>
@@ -163,6 +164,10 @@ import HtmlPage from "../components/HtmlPage.astro"
         animation: small-text-animation 2s alternate infinite;
     }
 
+    article img {
+        width: 95%;
+        height: auto;
+    }
 
     /* WARNING ! ugly responsive stuff here */
 
