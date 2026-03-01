@@ -1,6 +1,12 @@
 ---
 import Footer from "../components/Footer.astro"
 import HtmlPage from "../components/HtmlPage.astro"
+
+interface Props {
+  navIndex: number;
+}
+
+const {navIndex} = Astro.props;
 ---
 <HtmlPage title="Portfolio">
     <main>
@@ -27,7 +33,7 @@ import HtmlPage from "../components/HtmlPage.astro"
             <slot />
         </article>
 
-        <nav id="nav">
+        <nav id="nav" data-navindex={navIndex}> {/* https://docs.astro.build/en/guides/client-side-scripts/#pass-frontmatter-variables-to-scripts */}
             <img src="/assets/images/picture_close.webp" width="1020" height="930" alt="Picture of me" id="picofme">
             <ul>
                 <li class="static">Prenom : Yann</li>
@@ -60,6 +66,14 @@ import HtmlPage from "../components/HtmlPage.astro"
                 <li> <a href="/Portfolio/Projects/RomanScienceFiction"><arrow-sel>&gt; </arrow-sel>Roman de Science-Fiction</a></li>
             </ul>
         </nav>
+        {navIndex}
+        <script>
+            const navIndex = (document.getElementById("nav")?.dataset.navindex ?? -1) as number;
+
+            const navUlLis = document.querySelectorAll("nav > ul > li:not(.static)");
+
+            navUlLis.item(navIndex)?.classList.add("current");
+        </script>
     </main>
 
     <space-between></space-between>
@@ -130,29 +144,37 @@ import HtmlPage from "../components/HtmlPage.astro"
         padding-bottom: 2px;
     }
 
-    nav > ul > li a, .static {
+    nav > ul > li a, nav > ul:hover > li.current a, .static {
         animation: small-text-animation 2s alternate infinite;
         text-decoration: none;
     }
 
-    nav > ul > li:not(.static) {
+    nav > ul > li:not(.static), nav > ul:hover > li.current {
         cursor: pointer;
+        background-color: transparent;
         margin-left: 0;
         padding-left: 20px;
     }
 
-    nav > ul > li:not(.static):hover {
+    nav > ul {
+        pointer-events: none; /* what the fuck? */
+    }
+    nav > ul > li {
+        pointer-events: auto; /* https://www.geeksforgeeks.org/css/how-to-style-parent-element-when-hover-over-a-child-element-in-css/ https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/pointer-events */
+    }
+
+    nav > ul > li:not(.static):hover, nav > ul > li.current {
         background-color: #3fa800;
     }
-    nav > ul > li:not(.static):hover a {
+    nav > ul > li:not(.static):hover a, nav > ul > li.current a {
         animation: small-text-hover-animation 2s alternate infinite;
     }
 
-    arrow-sel {
+    arrow-sel, ul:hover > li.current arrow-sel {
         display: none;
     }
 
-    nav > ul > li:hover arrow-sel {
+    nav > ul > li:hover arrow-sel, ul > li.current arrow-sel {
         display: revert;
     }
 
