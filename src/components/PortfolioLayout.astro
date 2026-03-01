@@ -1,0 +1,182 @@
+---
+import Footer from "../components/Footer.astro"
+import HtmlPage from "../components/HtmlPage.astro"
+---
+<HtmlPage title="Portfolio">
+    <main>
+
+        <!-- <button class="menu-toggle-button" (click)="toggleMenu()"><<<< display menu</button> -->
+
+        <article>
+            <slot />
+        </article>
+
+        <nav>
+            <img src="/assets/images/picture_close.webp" width="1020" height="930" alt="Picture of me" id="picofme">
+            <ul>
+                <li class="static">Prenom : Yann</li>
+                <li class="static">Nom : (Green Jacket) B.</li>
+                <li> <a href="/"><arrow-sel>&gt; </arrow-sel>Page d'accueil</a></li>
+                <li> <a href="/Portfolio/AboutMe"><arrow-sel>&gt; </arrow-sel>About me</a></li>
+                <li> <a href="/Portfolio/Info/Contact"><arrow-sel>&gt; </arrow-sel>Contact</a></li>
+            <!-- Because I value graduating, but f*ck this
+                <li class="dynamic" (click)="goTo('/Portfolio/Info/Apprentissage')"><span class="arrow">> </span>Portfolio d'apprentissage</li>
+            -->
+
+                <li class="static">- - - - - - - - - - - - - - - -</li>
+                <li class="static">Compétences : </li>
+                <li> <a href="/Portfolio/Skills/Java"> <arrow-sel>&gt; </arrow-sel>Java</a></li>
+                <li> <a href="/Portfolio/Skills/Web"> <arrow-sel>&gt; </arrow-sel>Web</a></li>
+                <li> <a href="/Portfolio/Skills/SQL"> <arrow-sel>&gt; </arrow-sel>SQL</a></li>
+                <li> <a href="/Portfolio/Skills/Angular"> <arrow-sel>&gt; </arrow-sel>Angular</a></li>
+
+                <li class="static">- - - - - - - - - - - - - - - -</li>
+                <li class="static">Projets : </li>
+                <li> <a href="/Portfolio/Projects/SheikahSlateWeb"><arrow-sel>&gt; </arrow-sel>Sheikah Slate Web</a></li>
+                <li> <a href="/Portfolio/Projects/Stage2025"><arrow-sel>&gt; </arrow-sel>Stage 2025 (Aqualit)</a></li>
+                <li> <a href="/Portfolio/Projects/SaeTrains"><arrow-sel>&gt; </arrow-sel>SAE Trains</a></li>
+                <li> <a href="/Portfolio/Projects/SaeS3"><arrow-sel>&gt; </arrow-sel>SAE 3eme Semestre</a></li>
+                <li> <a href="/Portfolio/Projects/NDI2024"><arrow-sel>&gt; </arrow-sel>Nuit de l'Info</a></li>
+                <li> <a href="/Portfolio/Projects/SpaceshipCrew"><arrow-sel>&gt; </arrow-sel>Spaceship Crew (en C)</a></li>
+                <li> <a href="/Portfolio/Projects/GameCritics"><arrow-sel>&gt; </arrow-sel>Game-Critics</a></li>
+                <li> <a href="/Portfolio/Projects/EnvironnementVirtuel"><arrow-sel>&gt; </arrow-sel>Environnement Virtuel</a></li>
+                <li> <a href="/Portfolio/Projects/RomanScienceFiction"><arrow-sel>&gt; </arrow-sel>Roman de Science-Fiction</a></li>
+            </ul>
+        </nav>
+    </main>
+
+    <space-between></space-between>
+    <Footer style="articles"/>
+</HtmlPage>
+
+<style is:global>
+    @import url("/styles/animations.css");
+    @import url("/styles/variables.css");
+    @import url(/styles/terminal.css);
+
+    body {
+        background-color: black;
+        color: white;
+
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    main {
+        max-width: 1075px;
+        display: flex;
+
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+
+        border-color: var(--body-border-color);
+        border-width: 3px;
+        border-style: solid;
+        border-radius: 20px;
+    }
+
+    space-between {
+        flex: 1;
+    }
+
+    nav {
+        max-width: 25%;
+        min-width: 260px;
+        border: var(mai) 7px groove;
+    }
+
+    #picofme {
+        border: #424242 3px solid;
+
+        max-width: 80%;
+        height: auto;
+
+        margin: 5%;
+        margin-left: 9%;
+        /*border-radius: 20px;*/
+    }
+
+    nav > ul {
+        margin: .55em;
+        background-image: var(--fallout-terminal);
+        border: var(--small-text-border-color) 7px groove;
+        list-style-type: none;
+        padding: 20px;
+        padding-right: 0;
+    }
+
+    nav > ul > li {
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    nav > ul > li a, .static {
+        animation: small-text-animation 2s alternate infinite;
+        text-decoration: none;
+    }
+
+    nav > ul > li:not(.static) {
+        cursor: pointer;
+        margin-left: 0;
+        padding-left: 20px;
+    }
+
+    nav > ul > li:not(.static):hover {
+        background-color: #3fa800;
+    }
+    nav > ul > li:not(.static):hover a {
+        animation: small-text-hover-animation 2s alternate infinite;
+    }
+
+    arrow-sel {
+        display: none;
+    }
+
+    nav > ul > li:hover arrow-sel {
+        display: revert;
+    }
+
+    .invis {
+        color: rgba(0, 0, 0, 0);
+    }
+
+    .menu-toggle-button {
+
+        display: none;
+        position: fixed;
+        right: 0;
+        background-color: white;
+        text-align: center;
+
+        /* from .section-terminal, mostly */
+        animation: small-text-animation 2s alternate infinite;
+        background-image: var(--fallout-terminal);
+        border: var(--small-text-border-color) 7px groove;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    article a {
+        animation: small-text-animation 2s alternate infinite;
+    }
+
+
+    /* WARNING ! ugly responsive stuff here */
+
+    @media screen and (max-width: 935px) {
+
+        .image-and-text {
+            display: none;
+        }
+        .image-and-text.displayed {
+            display: initial;
+        }
+
+        .menu-toggle-button {
+            display: initial;
+        }
+    }
+</style>
