@@ -66,7 +66,7 @@ const {navIndex} = Astro.props;
                 <li> <a href="/Portfolio/Projects/RomanScienceFiction"><arrow-sel>&gt; </arrow-sel>Roman de Science-Fiction</a></li>
             </ul>
         </nav>
-        {navIndex}
+
         <script>
             const navIndex = (document.getElementById("nav")?.dataset.navindex ?? -1) as number;
 
@@ -144,6 +144,11 @@ const {navIndex} = Astro.props;
         padding-bottom: 2px;
     }
 
+    nav > ul > li a {
+        width: 100%;
+        height: 100%;
+    }
+
     nav > ul > li a, nav > ul:hover > li.current a, .static {
         animation: small-text-animation 2s alternate infinite;
         text-decoration: none;
@@ -174,12 +179,8 @@ const {navIndex} = Astro.props;
         display: none;
     }
 
-    nav > ul > li:hover arrow-sel, ul > li.current arrow-sel {
+    nav > ul > li.current arrow-sel, nav > ul > li:hover arrow-sel, nav > ul > li.current:hover arrow-sel {
         display: revert;
-    }
-
-    .invis {
-        color: rgba(0, 0, 0, 0);
     }
 
     article a {
