@@ -1,6 +1,7 @@
 ---
 import Footer from "../components/Footer.astro"
 import HtmlPage from "../components/HtmlPage.astro"
+import PortfolioNavElem from "./PortfolioNavElem.astro";
 
 interface Props {
   navIndex: number;
@@ -36,34 +37,34 @@ const {navIndex} = Astro.props;
         <nav id="nav" data-navindex={navIndex}> {/* https://docs.astro.build/en/guides/client-side-scripts/#pass-frontmatter-variables-to-scripts */}
             <img src="/assets/images/picture_close.webp" width="1020" height="930" alt="Picture of me" id="picofme">
             <ul>
-                <li class="static">Prenom : Yann</li>
-                <li class="static">Nom : (Green Jacket) B.</li>
-                <li> <a href="/"><arrow-sel>&gt; </arrow-sel>Page d'accueil</a></li>
-                <li> <a href="/Portfolio/AboutMe"><arrow-sel>&gt; </arrow-sel>About me</a></li>
-                <li> <a href="/Portfolio/Info/Contact"><arrow-sel>&gt; </arrow-sel>Contact</a></li>
+                <PortfolioNavElem content="Prenom : Yann" />
+                <PortfolioNavElem content="Nom : (Green Jacket) B." />
+                <PortfolioNavElem href="/" content="Page d'accueil" />
+                <PortfolioNavElem href="/Portfolio/AboutMe" content="About me" />
+                <PortfolioNavElem href="/Portfolio/Info/Contact" content="Contact" />
             {/*
             <!-- Because I value graduating, but f*ck this
                 <li class="dynamic" (click)="goTo('/Portfolio/Info/Apprentissage')"><span class="arrow">> </span>Portfolio d'apprentissage</li>
             -->
 */}
 
-                <li class="static">- - - - - - - - - - - - - - - -</li>
-                <li class="static">Compétences : </li>
-                <li> <a href="/Portfolio/Skills/Java"> <arrow-sel>&gt; </arrow-sel>Java</a></li>
-                <li> <a href="/Portfolio/Skills/Web"> <arrow-sel>&gt; </arrow-sel>Web</a></li>
-                <li> <a href="/Portfolio/Skills/SQL"> <arrow-sel>&gt; </arrow-sel>SQL</a></li>
-                <li> <a href="/Portfolio/Skills/Angular"> <arrow-sel>&gt; </arrow-sel>Angular</a></li>
+                <PortfolioNavElem content="- - - - - - - - - - - - - - - -" />
+                <PortfolioNavElem content="Compétences : " />
+                <PortfolioNavElem href="/Portfolio/Skills/Java" content="Java" />
+                <PortfolioNavElem href="/Portfolio/Skills/Web" content="Web" />
+                <PortfolioNavElem href="/Portfolio/Skills/SQL" content="SQL" />
+                <PortfolioNavElem href="/Portfolio/Skills/Angular" content="Angular" />
 
-                <li class="static">- - - - - - - - - - - - - - - -</li>
-                <li class="static">Projets : </li>
-                <li> <a href="/Portfolio/Projects/SheikahSlateWeb"><arrow-sel>&gt; </arrow-sel>Sheikah Slate Web</a></li>
-                <li> <a href="/Portfolio/Projects/Stage2025"><arrow-sel>&gt; </arrow-sel>Stage 2025 (Aqualit)</a></li>
-                <li> <a href="/Portfolio/Projects/SaeTrains"><arrow-sel>&gt; </arrow-sel>SAE Trains</a></li>
-                <li> <a href="/Portfolio/Projects/SaeS3"><arrow-sel>&gt; </arrow-sel>SAE 3eme Semestre</a></li>
-                <li> <a href="/Portfolio/Projects/NDI2024"><arrow-sel>&gt; </arrow-sel>Nuit de l'Info</a></li>
-                <li> <a href="/Portfolio/Projects/SpaceshipCrew"><arrow-sel>&gt; </arrow-sel>Spaceship Crew (en C)</a></li>
-                <li> <a href="/Portfolio/Projects/EnvironnementVirtuel"><arrow-sel>&gt; </arrow-sel>Environnement Virtuel</a></li>
-                <li> <a href="/Portfolio/Projects/RomanScienceFiction"><arrow-sel>&gt; </arrow-sel>Roman de Science-Fiction</a></li>
+                <PortfolioNavElem content="- - - - - - - - - - - - - - - -" />
+                <PortfolioNavElem content="Projets : " />
+                <PortfolioNavElem href="/Portfolio/Projects/SheikahSlateWeb" content="Sheikah Slate Web" />
+                <PortfolioNavElem href="/Portfolio/Projects/Stage2025" content="Stage 2025 (Aqualit)" />
+                <PortfolioNavElem href="/Portfolio/Projects/SaeTrains" content="SAE Trains" />
+                <PortfolioNavElem href="/Portfolio/Projects/SaeS3" content="SAE 3eme Semestre" />
+                <PortfolioNavElem href="/Portfolio/Projects/NDI2024" content="Nuit de l'Info" />
+                <PortfolioNavElem href="/Portfolio/Projects/SpaceshipCrew" content="Spaceship Crew (en C)" />
+                <PortfolioNavElem href="/Portfolio/Projects/EnvironnementVirtuel" content="Environnement Virtuel" />
+                <PortfolioNavElem href="/Portfolio/Projects/RomanScienceFiction" content="Roman de Science-Fiction" />
             </ul>
         </nav>
 
@@ -144,7 +145,8 @@ const {navIndex} = Astro.props;
         padding-bottom: 2px;
     }
 
-    nav > ul > li a {
+    nav > ul > li a  {
+        display: block;
         width: 100%;
         height: 100%;
     }
