@@ -1,9 +1,15 @@
 ---
+export const frontmatter = {
+  title: "Fiction and the self-romanticizing of human societies",
+  pubDate: "2025-05-01",
+  description: "..." // You need to set this yourself
+}
+
 import ArticlesLayout from "../../components/ArticlesLayout.astro"
 ---
 <ArticlesLayout>
 
-<h1> Fiction and the self-romanticizing of human societies</h1>
+<h1>{frontmatter.title}</h1>
 
 <h2> Romanticizing of societies :</h2>
 

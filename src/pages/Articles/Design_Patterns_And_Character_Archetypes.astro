@@ -1,9 +1,15 @@
 ---
+export const frontmatter = {
+  title: "Design Patterns and Character Archetypes are the same",
+  pubDate: "2026-08-12",
+  description: "..." // You need to set this yourself
+}
+
 import ArticlesLayout from "../../components/ArticlesLayout.astro"
 ---
 <ArticlesLayout>
 
-<h1> Design Patterns and Character Archetypes are the same</h1>
+<h1>{frontmatter.title}</h1>
 
   <p>
     I'm here to make the argument that <b>Design Patterns</b> and <b>Characters Archetypes</b> serve the same purpose in their respective 

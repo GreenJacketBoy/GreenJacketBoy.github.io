@@ -1,9 +1,15 @@
 ---
+export const frontmatter = {
+  title: "Galactic Kings of the hill: a Time travel theory",
+  pubDate: "2026-03-15",
+  description: "..." // You need to set this yourself
+}
+
 import ArticlesLayout from "../../components/ArticlesLayout.astro"
 ---
 <ArticlesLayout>
 
-<h1> Galactic Kings of the hill: a Time travel theory</h1>
+<h1>{frontmatter.title}</h1>
 
   <p> Let's start by creating a world. This world is an Earth like planet, and there are 2 nations : Red and Blue. These 2 nations are equal on all metrics — land, technology, population... —, but for reasons that are not explained, they are in a constant war.</p>
 

@@ -1,9 +1,15 @@
 ---
+export const frontmatter = {
+  title: "So I've been learning C",
+  pubDate: "2025-11-03",
+  description: "..." // You need to set this yourself
+}
+
 import ArticlesLayout from "../../components/ArticlesLayout.astro"
 ---
 <ArticlesLayout>
 
-<h1> So I've been learning C</h1>
+<h1>{frontmatter.title}</h1>
 
   <p> So I've been learning the C programming language for a few weeks now, and I'd like to share my experience. But first, let me explain why I wanted to learn this language.</p>
 
