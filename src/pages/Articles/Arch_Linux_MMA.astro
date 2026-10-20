@@ -1,9 +1,15 @@
 ---
+export const frontmatter = {
+  title: "Mixed Martial Arts and Arch Linux : The best comes from adaptability",
+  pubDate: "2025-04-03",
+  description: "..." // You need to set this yourself
+}
+
 import ArticlesLayout from "../../components/ArticlesLayout.astro"
 ---
 <ArticlesLayout>
 
-<h1> Mixed Martial Arts and Arch Linux : The best comes from adaptability </h1>
+<h1>{frontmatter.title}</h1>
 
   <p> For a little less than a year now, I've had 2 new interests : Martial Arts and Linux Systems. They are not related in any way, but with both, I've noticed a similar common answer to the question of "Which Martial art/Linux system is the best ?". </p>
 

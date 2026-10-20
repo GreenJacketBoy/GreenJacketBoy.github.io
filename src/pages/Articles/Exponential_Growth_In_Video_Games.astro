@@ -1,9 +1,15 @@
 ---
+export const frontmatter = {
+  title: "Exponential Growth in Minecraft vs Satisfactory",
+  pubDate: "2026-03-03",
+  description: "..." // You need to set this yourself
+}
+
 import ArticlesLayout from "../../components/ArticlesLayout.astro"
 ---
 <ArticlesLayout>
 
-<h1> Exponential Growth in Minecraft vs Satisfactory</h1>
+<h1>{frontmatter.title}</h1>
 
   <p>Exponential growth seems to be a fundamental aspect of living organisms. Take a system that can duplicate itself every second : At 0 second, you have 1 system. At 1, you have 2. 2 becomes 4, 4 becomes 8, 16, 32, 64, 128, 256, and it hasn't even been 10 seconds yet.</p>
 

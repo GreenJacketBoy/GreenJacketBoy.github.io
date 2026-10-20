@@ -1,9 +1,15 @@
 ---
+export const frontmatter = {
+  title: "Battlestar Galactica and why I like technological limitations in fiction",
+  pubDate: "2025-05-17",
+  description: "..." // You need to set this yourself
+}
+
 import ArticlesLayout from "../../components/ArticlesLayout.astro"
 ---
 <ArticlesLayout>
 
-<h1> Battlestar Galactica and why I like technological limitations in fiction</h1>
+<h1>{frontmatter.title}</h1>
 
   <p> Recently I've started watching <b><a href="https://en.wikipedia.org/wiki/Battlestar_Galactica"> Battlestar Galactica</a></b> (the one from 2003), and aside from how un-intuitive it is to watch it in the correct order when you don't know anything about it, not helped by the fact that everyone seemingly has a different opinion of how you should watch it, when everyone (a.k.a. "me") know that the only true way to watch it is in release order ... </p>
 

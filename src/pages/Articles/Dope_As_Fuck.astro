@@ -1,9 +1,15 @@
 ---
+export const frontmatter = {
+  title: "Not unless what they're showing off is dope as fuck",
+  pubDate: "2025-10-10",
+  description: "..." // You need to set this yourself
+}
+
 import ArticlesLayout from "../../components/ArticlesLayout.astro"
 ---
 <ArticlesLayout>
 
-<h1> Not unless what they're showing off is dope as fuck</h1>
+<h1>{frontmatter.title}</h1>
 
   <p> The title of this post is part of a dialogue from <a href="https://en.wikipedia.org/wiki/The_Suicide_Squad_(film)">The Suicide Squad (2021)</a>, responding to <i>"No one likes a show off"</i>. This clip was used in a video titled "<a href="https://youtu.be/09_18-KKOig">Lore-Accurate Ways To Play AC Unity</a>", to support a point that I'd like to present.</p>
 
